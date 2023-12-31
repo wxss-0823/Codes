@@ -1,0 +1,2 @@
+[{'uid': '202013911', 'name': '王锡胜舜', 'gender': '男', 'age': '20', 'college': 'EIC'},
+{'name': '小明', 'gender': '男', 'age': '18', 'college': '数学'}]

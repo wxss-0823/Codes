@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apology的拖拽网站</title>
+    <style type="text/css">
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+
+        function drag(ev){
+            ev.dataTransfer.setData("Image",ev.target.id)
+        }
+
+        function drop(ev){
+            let data = ev.dataTransfer.getData("Image");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <p>拖动apology头像到矩形框中</p>
+    <div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+    </div>
+
+    <br>
+
+    <img id="drag1" src="D:\Program Files (x86)\项目文件\Codes\VSCode\Front-end\Source\7.Drag\头像.jpg" alt="apology的头像" 
+    draggable="true" ondragstart="drag(event)" height="69">
+</body>
+</html>

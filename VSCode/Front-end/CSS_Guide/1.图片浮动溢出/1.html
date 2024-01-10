@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>apology的图片浮动溢出</title>
+</head>
+<body>
+    <p>第一个div在显示中溢出</p>
+    <div>
+        <img class="img1" 
+        src="D:\Program Files (x86)\项目文件\Codes\VSCode\Front-end\Source\7.Drag\头像.jpg" 
+        alt="头像" width="170">
+        图片显示溢出。若不设置浮动，不溢出，设置浮动，边框高度不足，会溢出。
+    </div>
+    <p class="p2">第二个div显示正常</p>
+    <div class="clearfix"> 
+        <img class="img2" 
+        src="D:\Program Files (x86)\项目文件\Codes\VSCode\Front-end\Source\7.Drag\头像.jpg" 
+        alt="头像" width="170">
+        正确设置overflow: auto，后正常显示图像。
+    </div>
+</body>
+</html>

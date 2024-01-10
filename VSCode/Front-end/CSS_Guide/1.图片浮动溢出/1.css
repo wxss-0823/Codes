@@ -1,0 +1,19 @@
+div {
+    border: 3px solid #4CAF50;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.p2 {
+    clear: right;
+}

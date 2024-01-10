@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form创建表单 action定义目标URL method定义HTTP方法 -->
+    <form action="/" method="post">
+        <!-- label为元素添加标签 -->>
+        <label for="name"> 
+            用户名：
+        </label>
+        <!-- input创建文本输入框 -->
+        <input type="text" id="name" name="name" required>
+        
+        <!-- 换行 -->    
+        <br>
+
+        <!-- 密码输入框 -->
+        <label for="password">
+            密码：
+        </label>
+        <input type="text" id="password" name="password" required>
+
+        <!-- 换行 -->
+        <br>
+
+        <!-- 密码输入框 -->
+        <label>
+            性别：
+        </label>
+        <!-- name定义的空间名称会和数据一起作为键值对提交 -->
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">
+            男
+        </label>
+        <input type="radio" id="female" name="gender" value="male" checked>
+        <label for="female">
+            女
+        </label>
+
+        <!-- 换行 -->
+        <br>
+
+        <!-- 复选框 -->
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <label for="subscribe">
+            订阅推送信息
+        </label>
+
+        <!-- 换行 -->
+        <br>
+
+        <!-- 下拉列表 -->
+        <label for="country">
+            国家：
+        </label>
+        <!-- value定义选中后被提交的值 -->
+        <select name="country" id="country">
+            <option value="cn">CN</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+
+        <!-- 换行 -->
+        <br>    
+
+        <!-- value定义按钮显示的值 -->
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

@@ -54,8 +54,8 @@ class FuncExample(Scene):
             color=BLUE,
         )
 
-        # 为图像设置标签
-        fx1_label = axes.get_graph_label(fx1, "f(x_1)", x=3, buff=LARGE_BUFF)
+        # 为图像设置标签    有初值即为可选参数，**kwargs 定义关键字参数，输入键值对
+        fx1_label = axes.get_graph_label(fx1, "f(x_1)", 3, buff=LARGE_BUFF)
         fx2_label = axes.get_graph_label(fx2, "f(x_2)", buff=LARGE_BUFF)
         fx3_label = axes.get_graph_label(fx3, "f(x_3)", buff=LARGE_BUFF)
         fx4_label = axes.get_graph_label(fx4, "f(x_4)", buff=LARGE_BUFF)

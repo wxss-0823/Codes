@@ -15,3 +15,23 @@ tuples = (x for x in range(10))
 print(tuples)
 a = tuple(tuples)
 print(a)
+
+# 列表推导式实例
+names = [
+    'Homer J Simpson',
+    'Marge H Bouvier',
+    'Alejandro Johnny Wilson'
+]
+last_name = [name.split(" ")[-1] for name in names]
+print(last_name)
+
+# 列表解包
+data = [
+    'Homer',
+    'Simpson',
+    'Husband',
+    'Lazy',
+    43
+]
+first_name, last_name, *_, age = data
+print(f"{first_name} {last_name}'s age is {age}")

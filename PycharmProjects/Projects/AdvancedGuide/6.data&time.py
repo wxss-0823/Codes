@@ -35,7 +35,7 @@ def formatTime():
 def getCalendar():
     # 获取某月日历
     cal = calendar.month(2024, 3)
-    print("以下输出2024年2月份的日历：")
+    print("以下输出2024年3月份的日历：")
     print(cal)
 
 

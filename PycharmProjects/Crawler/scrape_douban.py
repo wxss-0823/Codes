@@ -13,7 +13,6 @@ title_list = []
 
 for start_num in range(0, 250, 25):
     response = requests.get(f"https://movie.douban.com/top250?start={start_num}&filter=", headers=header)
-    response.st
     html = response.text
     soup = BeautifulSoup(html, "html.parser")
     title_kwargs = {

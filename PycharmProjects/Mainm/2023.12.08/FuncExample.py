@@ -1,3 +1,5 @@
+# 本实例使用 manimgl 库完成，python 版本为 3.10
+# 在更新 python 版本为 3.11 后，遭遇意外错误
 from manimlib import *
 import numpy as np
 

@@ -3,8 +3,8 @@
 # @Time    : 2024/2/1 23:11
 # @Author  : wxss
 # @File    : 6.input&output.py
-
-import pickle, pprint
+import pickle
+import pprint
 
 
 # repr 会自动转义特殊字符
@@ -29,14 +29,14 @@ data = {
     "c": None
 }
 
-selfref_list = [1, 2, 3]
-selfref_list.append(selfref_list)
+self_ref_list = [1, 2, 3]
+self_ref_list.append(self_ref_list)
 
 # Pickle dictionary using protocol 0
 pickle.dump(data, output)
 
 # Pickle dictionary using the highest protocol available
-pickle.dump(selfref_list, output, -1)
+pickle.dump(self_ref_list, output, -1)
 
 output.close()
 
@@ -47,5 +47,3 @@ pprint.pprint(data1)
 
 data2 = pickle.load(pkl_file)
 pprint.pprint(data2)
-
-

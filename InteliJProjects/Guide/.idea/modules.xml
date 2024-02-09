@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Guide.iml" filepath="$PROJECT_DIR$/Guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_1.HelloWorld/_1.HelloWorld.iml" filepath="$PROJECT_DIR$/_1.HelloWorld/_1.HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_2.Class/_2.Class.iml" filepath="$PROJECT_DIR$/_2.Class/_2.Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_3.Date/_3.Date.iml" filepath="$PROJECT_DIR$/_3.Date/_3.Date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" filepath="$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" />
+    </modules>
+  </component>
+</project>

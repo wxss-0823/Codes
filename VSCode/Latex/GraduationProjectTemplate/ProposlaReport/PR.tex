@@ -1,0 +1,141 @@
+% PR.tex
+% 本科毕业论文模板
+% 作者：wxss
+% 日期：2024/2/5
+% ---------------------------------------------------------------------------- %
+%                                   preamble                                   %
+% ---------------------------------------------------------------------------- %
+% 定义文档格式：默认字体 12pt == 宋体小四字号；纸张大小 a4；风格 article
+\documentclass[12pt,a4paper]{article}
+
+% ---------------------------------------------------------------------------- %
+%                                    package                                   %
+% ---------------------------------------------------------------------------- %
+% ----------用于论文排版---------- %
+% 设置页面边距，左右 3.18 cm，上下 2.54 cm
+\usepackage[top=2.54cm, bottom=2.54cm, left=3.18cm, right=3.18cm]{geometry}
+% 设置页眉距正文 1.5 cm，页脚距正文 1.75cm
+\geometry{headsep=1.5cm,footskip=1.75cm}
+% 设置页眉字号 宋体 5 号
+\geometry{head=10.5pt}
+
+% ----------用于设置行间距---------- %
+\usepackage{setspace}
+% 定义宏的数据比例 即行距倍数
+\renewcommand{\baselinestretch}{1.5}
+% 定义基础行距为 
+\setlength{\baselineskip}{18pt}
+% 定义段落
+\setlength\parskip{0pt} 
+% 设置段落缩进
+\setlength{\parindent}{0.77cm}
+
+% ----------用于设置字体--------- %
+% -----设置中文字体----- %
+\usepackage{xeCJK}
+% 设置中文正文罗马族字体
+\setCJKmainfont{SimSun}
+% 设置中文正文无衬线族字体
+\setCJKsansfont{SimSun}
+% 设置中文正文等宽族字体
+\setCJKmonofont{SimSun}
+% 声明新字体族
+% 宋体 song == SimSun
+\setCJKfamilyfont{song}[AutoFakeBold={2.17}]{SimSun}
+% 华文中宋 hwzs == STZhongsong
+\setCJKfamilyfont{hwzs}{STZhongsong}
+% 定义新命令
+\newcommand{\song}{\CJKfamily{song}}
+\newcommand{\hwzs}{\CJKfamily{hwzs}}
+% -----设置英文字体----- %
+\usepackage{fontspec}
+% 设置英文正文罗马族字体
+\setmainfont{Times New Roman}
+% 设置英文正文无衬线族字体
+\setsansfont{Times New Roman}
+% 设置英文正文等宽族字体
+\setmonofont{Times New Roman}
+% 声明新字体族
+\newfontfamily\cali{Calibri}
+% -----设置字号----- %
+% 四号 sihao
+\newcommand{\sihao}{\fontsize{14pt}{0pt}\selectfont}
+% 小四 xiaosi
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
+% 五号 wuhao
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}
+
+% ----------用于设置页眉、页脚--------- %
+\usepackage{fancyhdr}
+% 设置页眉样式
+\newcommand{\headstyle}{\fancyhead[C]{\hwzs \wuhao 华中科技大学本科生毕业设计（论文）开题报告}}
+% 设置页脚样式
+\newcommand{\footstyle}{
+    \fancyfoot[C]{\cali\fontsize{11pt}{0pt} \thepage}
+    \fancyfoot[L]{\rule[5pt]{6.7cm}{0.4pt}}
+    \fancyfoot[R]{\rule[5pt]{6.7cm}{0.4pt}}
+}
+% 设置页面风格
+\pagestyle{fancy}
+% 清空原有样式
+\fancyhf{}
+% 使用页眉、页脚
+\headstyle
+\footstyle
+% ----------用于设置标题---------- %
+\usepackage{titlesec}
+% 设置标题格式 只有一种标题
+\titleformat{\section}{\song\sihao\bfseries}{\thesection、}{0pt}{}
+% 用titlespacing修改section与正文第一行之间的距离为 1 个字符
+\titlespacing*{\section}{0pt}{1em}{0pt}
+% 设置标题为中文
+\usepackage{ctex}
+\renewcommand\thesection{\chinese{section}}
+% 设置 section 部分的内容格式
+\newcommand\seccontent{
+    % 设置字体
+    \song
+    % 设置字号
+	\xiaosi
+    % 设置首行缩进 0.77 cm
+    \setlength{\parindent}{0.77cm}
+    % 设置段落间距
+    \setlength{\parskip}{0pt}
+}
+
+
+
+
+
+
+% ---------------------------------------------------------------------------- %
+%                                    content                                   %
+% ---------------------------------------------------------------------------- %
+\begin{document}
+% --------------------第一部分-------------------- %
+\section{\sihao {这里是第一部分}}
+\seccontent{
+    这里是第一部分这里是第一部分这里是第一部分这里是第一部分
+
+
+    这里是第一部分这里是第一部分这里是第一部分这里是第一部分
+}
+
+
+
+
+% --------------------第二部分-------------------- %
+\section{\sihao {这里是第二部分}}
+% 第一自然段
+\seccontent{
+    这里是第二部分
+}\par
+\seccontent{
+   这里是第二部分
+}
+
+
+
+
+
+\end{document}

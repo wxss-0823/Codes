@@ -1,4 +1,5 @@
 from manimlib import *
+from os import system
 
 
 class R_IExample(Scene):
@@ -82,3 +83,7 @@ class R_IExample(Scene):
             )
         )
         self.wait()
+
+
+if __name__ == '__main__':
+    system(f'manim {__file__} R_IExample')

@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/3977891868_954760686_223132457.mp4'
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/2852726489_1959358871_2703877554.mp4'
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/2852726489_202686056_4227516557.mp4'
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/2852726489_1704852926_1592711848.mp4'
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/2852726489_130305978_574630669.mp4'
+file 'file:D:/Users/ProjectFiles/Codes/PycharmProjects/Mainm/2023.12.06/media/videos/TransformMatchingShapes/1080p60/partial_movie_files/TransformMatchingShapesExample/2852726489_1704852926_604571654.mp4'

@@ -8,6 +8,7 @@ def deco(
         callfunc: Callable[[], None]
 ) -> Callable[[], None]:
     print("进入了deco函数")
+
     def wrapper() -> None:
         print("进入了wrapper函数")
         startTime = time.time()

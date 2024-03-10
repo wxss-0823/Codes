@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/_2.Class/_2.Class.iml" filepath="$PROJECT_DIR$/_2.Class/_2.Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/_3.Date/_3.Date.iml" filepath="$PROJECT_DIR$/_3.Date/_3.Date.iml" />
       <module fileurl="file://$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" filepath="$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_5.Method/_5.Method.iml" filepath="$PROJECT_DIR$/_5.Method/_5.Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_6.IO/_6.IO.iml" filepath="$PROJECT_DIR$/_6.IO/_6.IO.iml" />
     </modules>
   </component>
 </project>

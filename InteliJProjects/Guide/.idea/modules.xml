@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/_5.Method/_5.Method.iml" filepath="$PROJECT_DIR$/_5.Method/_5.Method.iml" />
       <module fileurl="file://$PROJECT_DIR$/_6.IO/_6.IO.iml" filepath="$PROJECT_DIR$/_6.IO/_6.IO.iml" />
       <module fileurl="file://$PROJECT_DIR$/_7.Scanner/_7.Scanner.iml" filepath="$PROJECT_DIR$/_7.Scanner/_7.Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_8.Exception/_8.Exception.iml" filepath="$PROJECT_DIR$/_8.Exception/_8.Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_9.Inherit/_9.Inherit.iml" filepath="$PROJECT_DIR$/_9.Inherit/_9.Inherit.iml" />
     </modules>
   </component>
 </project>

@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Guide.iml" filepath="$PROJECT_DIR$/Guide.iml" />
       <module fileurl="file://$PROJECT_DIR$/_1.HelloWorld/_1.HelloWorld.iml" filepath="$PROJECT_DIR$/_1.HelloWorld/_1.HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/_10.Enum/_10.Enum.iml" filepath="$PROJECT_DIR$/_10.Enum/_10.Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_11.Iterator/_11.Iterator.iml" filepath="$PROJECT_DIR$/_11.Iterator/_11.Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_12.ArrayList/_12.ArrayList.iml" filepath="$PROJECT_DIR$/_12.ArrayList/_12.ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_13.HashCollection/_13.HashCollection.iml" filepath="$PROJECT_DIR$/_13.HashCollection/_13.HashCollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/_2.Class/_2.Class.iml" filepath="$PROJECT_DIR$/_2.Class/_2.Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/_3.Date/_3.Date.iml" filepath="$PROJECT_DIR$/_3.Date/_3.Date.iml" />
       <module fileurl="file://$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" filepath="$PROJECT_DIR$/_4.RegularExpression/_4.RegularExpression.iml" />

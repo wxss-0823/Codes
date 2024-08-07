@@ -15,25 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="友元函数.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="this指针.cpp">
+    <ClInclude Include="Enum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Enum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="访问数据成员.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="拷贝构造函数.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="指向类的指针.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="类的静态成员.cpp">
+    <ClCompile Include="Pointer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

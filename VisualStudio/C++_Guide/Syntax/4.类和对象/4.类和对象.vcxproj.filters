@@ -15,7 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pointer.cpp">
+    <ClCompile Include="..\..\4.类&amp;对象\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\this指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\访问数据成员.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\拷贝构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\类的静态成员.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\友元函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\4.类&amp;对象\指向类的指针.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

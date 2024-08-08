@@ -1,0 +1,243 @@
+Index: HWMP.py
+===================================================================
+diff --git a/HWMP.py b/HWMP.py
+deleted file mode 100644
+--- a/HWMP.py	(revision 40c78a3697577de528a941c5d97478efa804924e)
++++ /dev/null	(revision 40c78a3697577de528a941c5d97478efa804924e)
+@@ -1,7 +0,0 @@
+-#!/usr/bin/env python3
+-# -*- coding: utf-8 -*-
+-# @Time    : 2024/4/8 14:52
+-# @Author  : wxss
+-# @File    : HWMP.py
+-
+-
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/profiles_settings.xml	(revision 40c78a3697577de528a941c5d97478efa804924e)
++++ /dev/null	(revision 40c78a3697577de528a941c5d97478efa804924e)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 40c78a3697577de528a941c5d97478efa804924e)
++++ /dev/null	(revision 40c78a3697577de528a941c5d97478efa804924e)
+@@ -1,36 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredPackages">
+-        <value>
+-          <list size="6">
+-            <item index="0" class="java.lang.String" itemvalue="PyAutoGUI" />
+-            <item index="1" class="java.lang.String" itemvalue="GitPython" />
+-            <item index="2" class="java.lang.String" itemvalue="gitdb2" />
+-            <item index="3" class="java.lang.String" itemvalue="PyQt5" />
+-            <item index="4" class="java.lang.String" itemvalue="torch" />
+-            <item index="5" class="java.lang.String" itemvalue="PyQt5-sip" />
+-          </list>
+-        </value>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+-      <option name="ignoredErrors">
+-        <list>
+-          <option value="N802" />
+-          <option value="N806" />
+-          <option value="N803" />
+-          <option value="N801" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredIdentifiers">
+-        <list>
+-          <option value="dict.__setitem__" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+Index: ../2024.8.8/GitPush.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#!/usr/bin/env python3\r\n# -*- coding: utf-8 -*-\r\n# @Time    : 2024/8/8 11:38\r\n# @Author  : wxss\r\n# @File    : GitPush.py\r\nimport os\r\nimport time\r\n\r\n\r\ndef GetTime() -> str :\r\n    return time.strftime(\"%y-%m-%d %H:%M:%S\", time.localtime())\r\n\r\n\r\n# 提交信息\r\nauthor = \"wxss\"\r\ncommit_time = GetTime()\r\ncommit_msg = f\"\\\"{author}: {commit_time}\\\"\"\r\n\r\n\r\n# 命令集\r\ncheck_cmd = \"git status\"\r\nstorage_cmd = \"git add --all\"\r\ncommit_cmd = \"git commit -m \" + commit_msg\r\npush_cmd = \"git push -u origin master\"\r\n\r\n# 终端信息及执行\r\nprint(\"[Begin] Execute git automatic upload...\")\r\n# 查询 git 状态\r\nprint(\"[CMD_1] \" + check_cmd)\r\nos.system(check_cmd)\r\n# 存储文件\r\nprint(\"[CMD_2] \" + storage_cmd)\r\nos.system(storage_cmd)\r\n# 提交信息及文件\r\nprint(\"[CMD_3] \" + commit_cmd)\r\nos.system(commit_cmd)\r\n# push 到远程库\r\nprint(\"[CMD_4] \" + push_cmd)\r\nos.system(push_cmd)\r\n# 结束信息及退出\r\nprint(\"[End] finish uploading files to remote repository!\\n\")\r\nprint(\"Wait for 5s to exit...\")\r\ntime.sleep(5)\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../2024.8.8/GitPush.py b/../2024.8.8/GitPush.py
+--- a/../2024.8.8/GitPush.py	(revision 94ebff557253b645b19854a4632350b433cb6927)
++++ b/../2024.8.8/GitPush.py	(date 1723135280234)
+@@ -7,7 +7,7 @@
+ import time
+ 
+ 
+-def GetTime() -> str :
++def GetTime() -> str:
+     return time.strftime("%y-%m-%d %H:%M:%S", time.localtime())
+ 
+ 
+@@ -41,5 +41,3 @@
+ print("[End] finish uploading files to remote repository!\n")
+ print("Wait for 5s to exit...")
+ time.sleep(5)
+-
+-
+Index: ../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include <stdio.h>\r\n\r\n#define CTGR_NUM 4 \r\n#define STU_NUM 10\r\n\r\n// �ɼ��ȼ�����\r\nenum Grade{\r\n\tD,\r\n\tC,\r\n\tB,\r\n\tA\r\n};\r\n\r\n// �ṹ�壺����\r\n/*\r\n\tvs ��֧���ڽṹ�����ָ�����\r\n*/\r\n\r\nstruct Assessment {\r\n\tint Grade_std[CTGR_NUM] = { 60, 70, 80, 90 };\r\n\tfloat Grades[STU_NUM] = { 41.1, 62.2, 53.3, 84.4, 55.5, 76.6, 97.7, 98.8, 59.9, 60.0 };;\r\n\tchar Eng_Grades[STU_NUM];\r\n}assess;\r\n\r\n// ���������ɼ��������\r\nvoid Check_CATA() {\r\n\tfor (int i = 0; i < STU_NUM; i++)\r\n\t{\r\n\t\tif (assess.Grades[i] <= assess.Grade_std[D]) {\r\n\t\t\t// ָ�벻�ܷ��ʳ�Ա����\r\n\t\t\tassess.Eng_Grades[i] = 'D';\r\n\t\t}\r\n\t\telse if (assess.Grades[i] <= assess.Grade_std[C]) {\r\n\t\t\tassess.Eng_Grades[i] = 'C';\r\n\t\t}\r\n\t\telse if (assess.Grades[i] <= assess.Grade_std[B]) {\r\n\t\t\tassess.Eng_Grades[i] = 'B';\r\n\t\t}\r\n\t\telse {\r\n\t\t\tassess.Eng_Grades[i] = 'A';\r\n\t\t}\r\n\t}\r\n}\r\n\r\nstruct Assessment* assess1 = &assess;\r\n\r\n// ���������ɼ��������\r\nvoid Check_CATA1() {\r\n\tfor (int i = 0; i < STU_NUM; i++)\r\n\t{\r\n\t\tif ((*assess1).Grades[i] <= (*assess1).Grade_std[D]) {\r\n\t\t\t// ָ�벻�ܷ��ʳ�Ա����\r\n\t\t\t// (*p).xxx[1] = xxx;\r\n\t\t\t// p->str ��ʾ p ���ڴ�� str �ĵ�ַ\r\n\t\t\t(*assess1).Eng_Grades[i] = 'D';\r\n\t\t}\r\n\t\telse if ((*assess1).Grades[i] <= (*assess1).Grade_std[C]) {\r\n\t\t\t(*assess1).Eng_Grades[i] = 'C';\r\n\t\t}\r\n\t\telse if ((*assess1).Grades[i] <= (*assess1).Grade_std[B]) {\r\n\t\t\t(*assess1).Eng_Grades[i] = 'B';\r\n\t\t}\r\n\t\telse {\r\n\t\t\t(*assess1).Eng_Grades[i] = 'A';\r\n\t\t}\r\n\t}\r\n}\r\n\r\nvoid TestInit() {\r\n\tCheck_CATA1();\r\n\tprintf((*assess1).Eng_Grades);\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp b/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp
+--- a/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp	(revision 40c78a3697577de528a941c5d97478efa804924e)
++++ b/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp	(date 1723103558648)
+@@ -48,11 +48,11 @@
+ void Check_CATA1() {
+ 	for (int i = 0; i < STU_NUM; i++)
+ 	{
+-		if ((*assess1).Grades[i] <= (*assess1).Grade_std[D]) {
++		if (assess1->Grades[i] <= assess1->Grade_std[D]) {
+ 			// ָ�벻�ܷ��ʳ�Ա����
+ 			// (*p).xxx[1] = xxx;
+ 			// p->str ��ʾ p ���ڴ�� str �ĵ�ַ
+-			(*assess1).Eng_Grades[i] = 'D';
++			assess1->Eng_Grades[i] = 'D';
+ 		}
+ 		else if ((*assess1).Grades[i] <= (*assess1).Grade_std[C]) {
+ 			(*assess1).Eng_Grades[i] = 'C';
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1723135731337)
++++ b/.idea/workspace.xml	(date 1723135731337)
+@@ -0,0 +1,88 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="0922ee5d-6c37-4d34-9dc4-a5faeb90880e" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/HWMP.py" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../2024.8.8/GitPush.py" beforeDir="false" afterPath="$PROJECT_DIR$/../2024.8.8/GitPush.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../VisualStudio/CodeContact/2024.8.7/Enum.cpp" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Python Script" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../2024.8.8" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="ProjectErrors" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 5
++}</component>
++  <component name="ProjectId" id="2eo7VwRaWvhOu4g9sZdGmrXkKel" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++    <option name="showMembers" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "Python.GitPush.executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "master",
++    "last_opened_file_path": "D:/Users/ProjectFiles/Codes/PycharmProjects/Projects/2024.4.8"
++  }
++}]]></component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="0922ee5d-6c37-4d34-9dc4-a5faeb90880e" name="Changes" comment="" />
++      <created>1712559103360</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1712559103360</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/2024.4.8.iml\" filepath=\"$PROJECT_DIR$/.idea/2024.4.8.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 40c78a3697577de528a941c5d97478efa804924e)
++++ b/.idea/modules.xml	(date 1723088386756)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/2024.4.8.iml" filepath="$PROJECT_DIR$/.idea/2024.4.8.iml" />
++      <module fileurl="file://$PROJECT_DIR$/../2024.8.8/.idea/2024.8.8.iml" filepath="$PROJECT_DIR$/../2024.8.8/.idea/2024.8.8.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file

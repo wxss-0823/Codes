@@ -7,7 +7,7 @@ import os
 import time
 
 
-def GetTime() -> str :
+def GetTime() -> str:
     return time.strftime("%y-%m-%d %H:%M:%S", time.localtime())
 
 
@@ -41,5 +41,3 @@ os.system(push_cmd)
 print("[End] finish uploading files to remote repository!\n")
 print("Wait for 5s to exit...")
 time.sleep(5)
-
-

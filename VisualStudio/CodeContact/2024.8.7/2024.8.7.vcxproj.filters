@@ -21,6 +21,9 @@
     <ClInclude Include="Pointer.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="FuncPointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Enum.cpp">
@@ -30,6 +33,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Pointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncPointer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

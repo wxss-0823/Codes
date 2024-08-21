@@ -20,10 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enum.h" />
+    <ClInclude Include="FuncPointer.h" />
     <ClInclude Include="Pointer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Enum.cpp" />
+    <ClCompile Include="FuncPointer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pointer.cpp" />
   </ItemGroup>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            if (window.XMLHttpRequest)
+            {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else 
+            {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.open("Get", "Catalog.xml", false);
+            xmlhttp.send();
+            xmlDoc = xmlhttp.responseXML;
+
+            document.write("<table border='1'>");
+            var x = xmlDoc.getElementsByTagName("CD");
+
+            function displayCDInfo(i)
+            {
+                title = (x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+                artist = (x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+                country = (x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue);
+                price = (x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue);
+                year = (x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+                txt = "Title: " + title + "<br>Artist: " + artist + "<br>Country: " + country + "<br>Price: " + price + "<br>Year: " + year;
+                document.getElementById("showCD").innerHTML = txt;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="showCD">Click on a CD to display album information.</div><br>
+        <script>
+            document.write("<table border='1'>");
+            for (var i=0;i<x.length;i++)
+            {
+                document.write("<tr onclick='displayCDInfo(" + i + ")'>");
+                document.write("<td>");
+                document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+                document.write("</td><td>");
+                document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+                document.write("</td></tr>");
+            }
+            documentw.write("</table>");
+        </script>
+    </body>
+</html>

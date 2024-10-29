@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoredDate-ParseFunction</title>
+</head>
+<body>
+    <p>This is stored date.</p>
+    <p id="date"></p>
+    <p>This is parsed fucntion showing my birthday.</p>
+    <p id="birth"></p>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                obj = JSON.parse(this.responseText);
+                obj.date = new Date(obj.date);
+                obj.birthday = eval("(" + obj.birthday + ")");
+                document.getElementById("date").innerHTML = obj.date;
+                document.getElementById("birth").innerHTML = obj.birthday();
+            }
+        }
+        xmlhttp.open("GET", "demo.json", "true");
+        xmlhttp.send();
+    </script>
+</body>
+</html>

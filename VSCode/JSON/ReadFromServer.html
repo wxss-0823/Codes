@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadFromServer</title>
+</head>
+<body>
+    <h2>Acquire file from server using XMLHttpRequest.</h2>
+    <p>Transform JSON to javascript object by JSON.parse.</p>
+    <p id="demo"></p>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myObj = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = myObj.food["meat"];
+            }
+        }
+        xmlhttp.open("GET", "demo.json", "true");
+        xmlhttp.send();
+    </script>
+</body>
+</html>

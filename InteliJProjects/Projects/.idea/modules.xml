@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DecryptSqlite3Value_20241023/DecryptSqlite3Value_20241023.iml" filepath="$PROJECT_DIR$/DecryptSqlite3Value_20241023/DecryptSqlite3Value_20241023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Projects.iml" filepath="$PROJECT_DIR$/.idea/Projects.iml" />
+    </modules>
+  </component>
+</project>

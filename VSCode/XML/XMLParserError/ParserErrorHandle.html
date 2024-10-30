@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="LoadXML.js"></script>
+</head>
+<body>
+    <p id="xml"></p>
+    <script>
+        xmlDoc = loadXMLWithParserDetect("xml_error.xml");
+        // xmlDoc = loadXMLWithParserDetect("xml_correct.xml");
+        document.getElementById("xml").innerHTML = xmlDoc.getElementsByTagName("text")[0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>

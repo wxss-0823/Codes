@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONStringify</title>
+</head>
+<body>
+    <p id="time"></p>
+    <p id="func"></p>
+    <script>
+        var myJson = {"initDate":new Date(), "alexa":function () {return 1;}};
+        var obj = JSON.stringify(myJson);
+        document.getElementById("time").innerHTML = obj;
+        myJson.alexa = myJson.alexa.toString();
+        var obj1 = JSON.stringify(myJson);
+        document.getElementById("func").innerHTML = obj1;
+    </script>
+</body>
+</html>

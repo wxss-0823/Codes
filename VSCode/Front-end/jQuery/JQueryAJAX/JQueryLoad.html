@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQueryLoad</title>
+    <script src="../assets/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").load("demo_text.xml #p1");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>loading...</button>
+    <div id="div1"></div>
+</body>
+</html>

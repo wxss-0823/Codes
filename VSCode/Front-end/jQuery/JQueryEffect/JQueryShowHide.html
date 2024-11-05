@@ -9,7 +9,7 @@
         $(document).ready(function () {
             $("button").click(function () {
                 $("p").toggle(0, function () {
-                    $("button").text(function (newText, origText) {
+                    $("button").text(function (i, origText) {
                         return origText === "Show" ? "Hide" : "Show";
                     });
             });

@@ -11,7 +11,7 @@ func GoFunction() {
 		return math.Sqrt(num + a)
 	}
 
-	getTime := func (operation func(float64) float64, num1, num2 float64)  float64 {
+	getTime := func(operation func(float64) float64, num1, num2 float64) float64 {
 		result := (operation(num1) * num2)
 		return result
 	}

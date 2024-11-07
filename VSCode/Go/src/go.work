@@ -1,0 +1,7 @@
+go 1.23.2
+
+use ./MyFirstGoModule
+use ./Main
+
+replace mfg v1.0.0 => ./MyFirstGoModule
+replace main v1.0.0 => ./Main

@@ -1,0 +1,30 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\bin\Debug\net8.0\5.ConstValue.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\bin\Debug\net8.0\5.ConstValue.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\bin\Debug\net8.0\5.ConstValue.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\bin\Debug\net8.0\5.ConstValue.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\bin\Debug\net8.0\5.ConstValue.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\refint\5.ConstValue.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\5.ConstValue.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\ConstValue\obj\Debug\net8.0\ref\5.ConstValue.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\bin\Debug\net8.0\5.ConstValue.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\bin\Debug\net8.0\5.ConstValue.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\bin\Debug\net8.0\5.ConstValue.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\bin\Debug\net8.0\5.ConstValue.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\bin\Debug\net8.0\5.ConstValue.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\refint\5.ConstValue.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\5.ConstValue.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\5.ConstValue\obj\Debug\net8.0\ref\5.ConstValue.dll

@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\bin\Debug\net8.0\17.Regex.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\bin\Debug\net8.0\17.Regex.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\bin\Debug\net8.0\17.Regex.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\bin\Debug\net8.0\17.Regex.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\bin\Debug\net8.0\17.Regex.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\refint\17.Regex.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\17.Regex.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\17.Regex\obj\Debug\net8.0\ref\17.Regex.dll

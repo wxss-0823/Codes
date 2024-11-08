@@ -1,0 +1,30 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\refint\6.Recursion.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\ref\6.Recursion.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\bin\Debug\net8.0\6.Recursion.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\refint\6.Recursion.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\6.Recursion.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\6.Recursion\obj\Debug\net8.0\ref\6.Recursion.dll

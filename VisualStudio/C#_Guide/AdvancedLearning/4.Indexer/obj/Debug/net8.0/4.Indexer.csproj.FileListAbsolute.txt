@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\bin\Debug\net8.0\4.Indexer.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\bin\Debug\net8.0\4.Indexer.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\bin\Debug\net8.0\4.Indexer.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\bin\Debug\net8.0\4.Indexer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\bin\Debug\net8.0\4.Indexer.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\refint\4.Indexer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\4.Indexer.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.Indexer\obj\Debug\net8.0\ref\4.Indexer.dll

@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\bin\Debug\net8.0\8.AnoymousMethods.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\bin\Debug\net8.0\8.AnoymousMethods.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\bin\Debug\net8.0\8.AnoymousMethods.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\bin\Debug\net8.0\8.AnoymousMethods.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\bin\Debug\net8.0\8.AnoymousMethods.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\refint\8.AnoymousMethods.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\8.AnoymousMethods.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\4.AnoymousMethods\obj\Debug\net8.0\ref\8.AnoymousMethods.dll

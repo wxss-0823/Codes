@@ -1,0 +1,15 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\bin\Debug\net8.0\1.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\bin\Debug\net8.0\1.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\bin\Debug\net8.0\1.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\bin\Debug\net8.0\1.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\bin\Debug\net8.0\1.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\refint\1.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\1.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\1\obj\Debug\net8.0\ref\1.dll

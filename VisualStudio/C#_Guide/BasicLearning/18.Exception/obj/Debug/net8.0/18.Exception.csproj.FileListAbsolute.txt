@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\bin\Debug\net8.0\18.Exception.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\bin\Debug\net8.0\18.Exception.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\bin\Debug\net8.0\18.Exception.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\bin\Debug\net8.0\18.Exception.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\bin\Debug\net8.0\18.Exception.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\refint\18.Exception.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\18.Exception.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\18.Exception\obj\Debug\net8.0\ref\18.Exception.dll

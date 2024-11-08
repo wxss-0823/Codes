@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\bin\Debug\net8.0\3.Property.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\bin\Debug\net8.0\3.Property.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\bin\Debug\net8.0\3.Property.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\bin\Debug\net8.0\3.Property.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\bin\Debug\net8.0\3.Property.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\refint\3.Property.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\3.Property.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\3.Property\obj\Debug\net8.0\ref\3.Property.dll

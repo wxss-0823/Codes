@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\bin\Debug\net8.0\1.Attribute.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\bin\Debug\net8.0\1.Attribute.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\bin\Debug\net8.0\1.Attribute.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\bin\Debug\net8.0\1.Attribute.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\bin\Debug\net8.0\1.Attribute.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\refint\1.Attribute.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\1.Attribute.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\1.Attribute\obj\Debug\net8.0\ref\1.Attribute.dll

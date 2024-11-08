@@ -1,0 +1,30 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\refint\11.StaticVar.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\ref\11.StaticVar.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\bin\Debug\net8.0\11.StaticVar.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\refint\11.StaticVar.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\11.StaticVar.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\11.StaticVar\obj\Debug\net8.0\ref\11.StaticVar.dll

@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\bin\Debug\net8.0\15.Interface.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\bin\Debug\net8.0\15.Interface.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\bin\Debug\net8.0\15.Interface.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\bin\Debug\net8.0\15.Interface.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\bin\Debug\net8.0\15.Interface.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\refint\15.Interface.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\15.Interface.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\15.Interface\obj\Debug\net8.0\ref\15.Interface.dll

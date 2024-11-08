@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\bin\Debug\net8.0\16.Namespace.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\bin\Debug\net8.0\16.Namespace.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\bin\Debug\net8.0\16.Namespace.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\bin\Debug\net8.0\16.Namespace.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\bin\Debug\net8.0\16.Namespace.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\refint\16.Namespace.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\16.Namespace.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\16.Namespace\obj\Debug\net8.0\ref\16.Namespace.dll

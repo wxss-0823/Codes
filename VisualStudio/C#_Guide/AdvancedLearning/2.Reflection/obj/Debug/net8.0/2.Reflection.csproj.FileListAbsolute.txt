@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\bin\Debug\net8.0\2.Reflection.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\bin\Debug\net8.0\2.Reflection.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\bin\Debug\net8.0\2.Reflection.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\bin\Debug\net8.0\2.Reflection.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\bin\Debug\net8.0\2.Reflection.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\refint\2.Reflection.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\2.Reflection.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\2.Reflection\obj\Debug\net8.0\ref\2.Reflection.dll

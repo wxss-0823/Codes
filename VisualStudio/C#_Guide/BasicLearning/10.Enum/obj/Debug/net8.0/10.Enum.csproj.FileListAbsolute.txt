@@ -1,0 +1,30 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\refint\10.Enum.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\ref\10.Enum.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\bin\Debug\net8.0\10.Enum.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\refint\10.Enum.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\10.Enum.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\10.Enum\obj\Debug\net8.0\ref\10.Enum.dll

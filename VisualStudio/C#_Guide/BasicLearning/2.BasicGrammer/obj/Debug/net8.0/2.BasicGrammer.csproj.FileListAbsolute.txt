@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\bin\Debug\net8.0\2.BasicGrammer.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\bin\Debug\net8.0\2.BasicGrammer.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\bin\Debug\net8.0\2.BasicGrammer.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\bin\Debug\net8.0\2.BasicGrammer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\bin\Debug\net8.0\2.BasicGrammer.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\refint\2.BasicGrammer.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\2.BasicGrammer.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\2.BasicGrammer\obj\Debug\net8.0\ref\2.BasicGrammer.dll

@@ -1,0 +1,30 @@
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.exe
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.deps.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.runtimeconfig.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.AssemblyInfoInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.AssemblyInfo.cs
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.csproj.CoreCompileInputs.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.sourcelink.json
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\refint\12.Inheritance.dll
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.pdb
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.genruntimeconfig.cache
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\ref\12.Inheritance.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\bin\Debug\net8.0\12.Inheritance.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\refint\12.Inheritance.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\12.Inheritance.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\12.Inheritance\obj\Debug\net8.0\ref\12.Inheritance.dll

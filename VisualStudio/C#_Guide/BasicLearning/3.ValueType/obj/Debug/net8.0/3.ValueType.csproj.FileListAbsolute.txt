@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\bin\Debug\net8.0\3.ValueType.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\bin\Debug\net8.0\3.ValueType.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\bin\Debug\net8.0\3.ValueType.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\bin\Debug\net8.0\3.ValueType.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\bin\Debug\net8.0\3.ValueType.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\refint\3.ValueType.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\3.ValueType.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\3.ValueType\obj\Debug\net8.0\ref\3.ValueType.dll

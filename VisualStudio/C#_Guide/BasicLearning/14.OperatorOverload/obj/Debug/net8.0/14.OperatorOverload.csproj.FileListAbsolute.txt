@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\bin\Debug\net8.0\14.OperatorOverload.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\bin\Debug\net8.0\14.OperatorOverload.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\bin\Debug\net8.0\14.OperatorOverload.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\bin\Debug\net8.0\14.OperatorOverload.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\bin\Debug\net8.0\14.OperatorOverload.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\refint\14.OperatorOverload.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\14.OperatorOverload.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\BasicLearning\14.OperatorOverload\obj\Debug\net8.0\ref\14.OperatorOverload.dll

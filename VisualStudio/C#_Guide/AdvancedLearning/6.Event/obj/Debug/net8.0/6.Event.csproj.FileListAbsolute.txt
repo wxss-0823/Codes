@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\bin\Debug\net8.0\6.Event.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\bin\Debug\net8.0\6.Event.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\bin\Debug\net8.0\6.Event.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\bin\Debug\net8.0\6.Event.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\bin\Debug\net8.0\6.Event.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\refint\6.Event.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\6.Event.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\6.Event\obj\Debug\net8.0\ref\6.Event.dll

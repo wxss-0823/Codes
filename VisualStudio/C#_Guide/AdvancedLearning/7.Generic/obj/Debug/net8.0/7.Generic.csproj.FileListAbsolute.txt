@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\bin\Debug\net8.0\7.Generic.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\bin\Debug\net8.0\7.Generic.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\bin\Debug\net8.0\7.Generic.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\bin\Debug\net8.0\7.Generic.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\bin\Debug\net8.0\7.Generic.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\refint\7.Generic.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\7.Generic.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\7.Generic\obj\Debug\net8.0\ref\7.Generic.dll

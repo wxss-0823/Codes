@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C_Guide\10.错误处理\main.cpp(7,12): warning C4273: “_errno”: dll 链接不一致
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\stddef.h(35,27):
+  参见“_errno”的前一个定义
+  
+  10.错误处理.vcxproj -> D:\Program Files (x86)\项目文件\Codes\VisualStudio\C_Guide\x64\Debug\10.错误处理.exe

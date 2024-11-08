@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C++_Guide\Syntax\2.字符串\main.cpp(21,17): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  2.字符串.vcxproj -> D:\Program Files (x86)\项目文件\Codes\VisualStudio\C++_Guide\Syntax\x64\Debug\2.字符串.exe

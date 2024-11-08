@@ -1,0 +1,26 @@
+﻿  main.cpp
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(219,15): warning C4101: “price”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(218,20): warning C4101: “bm”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(218,13): warning C4101: “i”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(218,28): warning C4101: “ct”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(218,16): warning C4101: “bd”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(218,24): warning C4101: “by”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(914,43): warning C4101: “pub”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(916,15): warning C4101: “price”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(915,25): warning C4101: “howmany”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(915,21): warning C4101: “py”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(915,17): warning C4101: “pm”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(914,14): warning C4101: “num0”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(914,33): warning C4101: “auth”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(914,24): warning C4101: “tit”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(915,13): warning C4101: “pd”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(935,43): warning C4101: “clas”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(935,33): warning C4101: “coll”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(935,14): warning C4101: “num0”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(935,24): warning C4101: “nam”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(950,19): warning C4101: “k”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(950,16): warning C4101: “j”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(950,13): warning C4101: “i”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(948,14): warning C4101: “tit”: 未引用的局部变量
+D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\LibraryManagement\main.cpp(1102,14): warning C4101: “tit”: 未引用的局部变量
+  LibraryManagement.vcxproj -> D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\BilibiliExamples\BiliSol\x64\Debug\LibraryManagement.exe

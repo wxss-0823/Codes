@@ -1,0 +1,15 @@
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.AssemblyInfoInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.AssemblyInfo.cs
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.sourcelink.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\bin\Debug\net8.0\9.UnsafeCode.exe
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\bin\Debug\net8.0\9.UnsafeCode.deps.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\bin\Debug\net8.0\9.UnsafeCode.runtimeconfig.json
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\bin\Debug\net8.0\9.UnsafeCode.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\bin\Debug\net8.0\9.UnsafeCode.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\refint\9.UnsafeCode.dll
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.pdb
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\9.UnsafeCode.genruntimeconfig.cache
+D:\Program Files (x86)\项目文件\Codes\VisualStudio\C#_Guide\AdvancedLearning\9.UnsafeCode\obj\Debug\net8.0\ref\9.UnsafeCode.dll

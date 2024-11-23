@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP AJAX & MySQL</title>
+</head>
+<script src="ajax.js">
+</script>
+<body>
+    <form>
+        <select name="users" onchange="showSite(this.value)">
+            <option value="">选择一个网站:</option>
+            <option value="1">Google</option>
+            <option value="2">淘宝</option>
+            <option value="3">菜鸟教程</option>
+            <option value="4">微博</option>
+            <option value="5">Facebook</option>
+        </select>
+    </form>
+    <div id="txtHint"><b>网站信息显示在这里......</b></div>
+</body>
+</html>

@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import net.sourceforge.jdpapi.DataProtector;
+
 
 public class TestCookies {
     static Connection connection = null;
@@ -14,7 +14,7 @@ public class TestCookies {
 
     private final DataProtector dataProtector;
     public TestCookies() {
-        dataProtector = new DataProtector();
+        this.dataProtector = new DataProtector();
     }
 
     private String decrypt(byte[] data) {
@@ -45,16 +45,15 @@ public class TestCookies {
                 byte[] b = byteArrayOutputStream.toByteArray();
                 byteArrayOutputStream.close();
 
-                System.out.printf(String.format("name=%s value=%s encrypted_value=%s", name, value,testCookies.decrypt(b)));
+                System.out.printf(String.format("name=%s value=%s encrypted_value=%s", name, value, testCookies.decrypt(b)));
             }
             resultSet.close();
             connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        System.load("D:\\Program Files (x86)\\Microsoft Edge\\jdpapi-1.0.1\\jdpapi-native-1.0.1.dll");
-
     }
-
+    static {
+        System.load("D:\\Users\\ProjectFiles\\Codes\\InteliJProjects\\Projects\\DecryptSqlite3Value_20241023\\assets\\jdpapi-native-1.0.1.dll");
+    }
 }

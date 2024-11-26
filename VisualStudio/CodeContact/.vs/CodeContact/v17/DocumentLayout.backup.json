@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|solutionrelative:2024.8.7\\FuncPointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|solutionrelative:2024.8.7\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|solutionrelative:2024.8.7\\FuncPointer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\Enum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D169145-06CF-491A-8392-CF5DA3C3DC06}|2024.8.7\\2024.8.7.vcxproj|solutionrelative:2024.8.7\\Enum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enum.cpp",
+              "DocumentMoniker": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\Enum.cpp",
+              "RelativeDocumentMoniker": "2024.8.7\\Enum.cpp",
+              "ToolTip": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\Enum.cpp",
+              "RelativeToolTip": "2024.8.7\\Enum.cpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-09T20:06:46.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuncPointer.h",
+              "DocumentMoniker": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.h",
+              "RelativeDocumentMoniker": "2024.8.7\\FuncPointer.h",
+              "ToolTip": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.h",
+              "RelativeToolTip": "2024.8.7\\FuncPointer.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-09T19:50:45.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\main.cpp",
+              "RelativeDocumentMoniker": "2024.8.7\\main.cpp",
+              "ToolTip": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\main.cpp",
+              "RelativeToolTip": "2024.8.7\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-09T19:48:58.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuncPointer.cpp",
+              "DocumentMoniker": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.cpp",
+              "RelativeDocumentMoniker": "2024.8.7\\FuncPointer.cpp",
+              "ToolTip": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\CodeContact\\2024.8.7\\FuncPointer.cpp",
+              "RelativeToolTip": "2024.8.7\\FuncPointer.cpp",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-09T19:15:24.077Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+ ------
+ Home
+ ------
+ Kevin Conaway
+ ------
+ 9 November 2007
+ ------
+
+Java Data Protection API
+
+ JDPAPI is a JNI wrapper around the Microsoft Data Protection API.
+
+* Usage
+   
+    Some things to keep in mind when using jdpapi:
+        
+        * It is up to you to call <<<System.loadLibrary()>>> or <<<System.load()>>> to load
+        the jdpapi-native.dll.  You'll have to either put the dll in a place where the <<<java.library.path>>> jvm argument
+        can find it or specify a full path to <<<System.load()>>>.
+        
+        * Unlike other encryption schemes, encrypyting the same data produces two different cipher texts.  You'll have to
+        find a way to store the returned ciphertext.
+        
+        * See the {{{jdpapi-java/apidocs/index.html}javadocs}} for more information.
+    
+
+* Example
+
+   Below is an example class that uses jdpapi to protect a <<<java.util.Properties>>>
+   class.
+   
+   You'll notice that the property names are stored alongside the properties themselves.  If you encrypt the
+   same value twice with DPAPI, it produces two different ciphertexts so it is necessary to keep the
+   plaintext property names in memory.
+
++-------------------------------------------------------------------+
+import org.apache.commons.codec.binary.Base64;
+
+public class EncryptedProperties {
+    
+    private final DataProector protector;
+    private final Properties properties;
+    private final Base64 base64;
+    private final Map<String, String> keys;
+    
+    public NativeEncryptedProperties() {
+        this.protector = new DataProtector();
+        this.properties = new Properties();
+        this.base64 = new Base64();
+        this.keys = new HashMap<String, String>();
+    }
+    
+    public void store(Writer writer) throws IOException {
+        properties.store(writer, "");
+    }
+
+    public void load(Reader reader) throws IOException {
+        properties.load(reader);
+        
+        for (String key : properties.stringPropertyNames()) {
+            keys.put(decrypt(key), key);
+        }
+    }
+    
+    public void setProperty(String key, String value) {
+        String encryptedKey = encrypt(key);
+        String encryptedValue = encrypt(value);
+        keys.put(key, encryptedKey);
+        
+        properties.setProperty(encryptedKey, encryptedValue);
+    }
+    
+    public String getProperty(String key) {
+        String encryptedKey = keys.get(key);
+        String encryptedValue = properties.getProperty(encryptedKey);
+        return decrypt(encryptedValue);
+    }
+    
+    private String encrypt(String key) {
+        byte [] data = protector.protect(key);
+        return new String(base64.encode(data));
+    }
+    
+    private String decrypt(String encryptedString) {
+        byte [] data = base64.decode(encryptedString.getBytes());
+        return protector.unprotect(data);
+    }
+    
+    static {
+        System.loadLibrary("jdpapi-native.dll");
+    }
+
++-------------------------------------------------------------------+

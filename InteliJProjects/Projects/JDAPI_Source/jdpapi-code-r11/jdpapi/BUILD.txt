@@ -1,0 +1,15 @@
+As of this writing, MinGW does not yet have the CryptProtectData and CryptUnprotectData
+headers in wincrypt.h so you will need the Microsoft .NET command line compiler.
+
+You'll also need to install the Microsoft Platform SDK which contains all the necessary
+headers and library files.  Once you have this installed, create an environment
+variable called SDK_HOME that points to the SDK directory.
+
+
+To build, run:
+mvn clean package assembly:assembly
+
+
+Kevin Conaway
+kevin.a.conaway@gmail.com
+http://jdpapi.sourceforge.net

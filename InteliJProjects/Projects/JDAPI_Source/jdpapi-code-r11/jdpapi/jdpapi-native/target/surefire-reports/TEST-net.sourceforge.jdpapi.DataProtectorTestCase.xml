@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="net.sourceforge.jdpapi.DataProtectorTestCase" time="0.031" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native\target\test-classes;D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native\target\classes;D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-java\target\jdpapi-java-1.0.1.jar;D:\Users\Wang Xishengshun\.m2\repository\org\xerial\sqlite-jdbc\3.23.1\sqlite-jdbc-3.23.1.jar;D:\Users\Wang Xishengshun\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk-1.8\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Wang Xishengshun\AppData\Local\Temp\surefire3771335687933286418\surefirebooter-20241127204637226_3.jar C:\Users\Wang Xishengshun\AppData\Local\Temp\surefire3771335687933286418 2024-11-27T20-46-37_095-jvmRun1 surefire-20241127204637226_1tmp surefire_0-20241127204637226_2tmp"/>
+    <property name="surefire.test.class.path" value="D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native\target\test-classes;D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native\target\classes;D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-java\target\jdpapi-java-1.0.1.jar;D:\Users\Wang Xishengshun\.m2\repository\org\xerial\sqlite-jdbc\3.23.1\sqlite-jdbc-3.23.1.jar;D:\Users\Wang Xishengshun\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Wang Xishengshun"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\Program Files\Java\jdk-1.8\jre"/>
+    <property name="basedir" value="D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Wang Xishengshun\AppData\Local\Temp\surefire3771335687933286418\surefirebooter-20241127204637226_3.jar"/>
+    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk-1.8\jre\lib\resources.jar;D:\Program Files\Java\jdk-1.8\jre\lib\rt.jar;D:\Program Files\Java\jdk-1.8\jre\lib\jsse.jar;D:\Program Files\Java\jdk-1.8\jre\lib\jce.jar;D:\Program Files\Java\jdk-1.8\jre\lib\charsets.jar;D:\Program Files\Java\jdk-1.8\jre\lib\jfr.jar;D:\Program Files\Java\jdk-1.8\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_401-b10"/>
+    <property name="user.name" value="Wang Xishengshun"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk-1.8\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Users\Wang Xishengshun\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\WANGXI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_401"/>
+    <property name="user.dir" value="D:\Program Files (x86)\Microsoft Edge\cookies\jdpapi-code-r11\jdpapi\jdpapi-native"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk-1.8\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS;D:\Program Files\Java\jdk-1.8\bin;D:\Program Files\Java\jdk-1.8\jre\bin;D:\Users\MySQL\mysql-9.0.1-winx64\bin;D:\Program Files\Texlive\2023\bin\windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\IntelSWToolsMPI\compilers_and_libraries_2020.4.321\windows\mpi\intel64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Wang Xishengshun\AppData\Roaming\Python\Python310\Scripts;C:\Program Files (x86)\Wolfram Research\WolframScript\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Wolfram Research\WolframScript\;D:\Program Files\ffmpeg\bin;D:\Users\Anaconda\anaconda3;D:\Users\Anaconda\anaconda3\Scripts;D:\Users\Anaconda\anaconda3\Library\bin;D:\Users\Anaconda\anaconda3\Library\mingw-w64\bin;D:\Users\Vivado2023.1\Vitis_HLS\2023.1;D:\Program Files\MATLAB\R2024a\bin;D:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\Program Files\Git\;D:\Program Files\Clash for Windows;D:\Program Files\Sublime Text;D:\Program Files\Everything;D:\Program Files\Maven\apache-maven-3.9.9\bin;C:\Program Files (x86)\Windows Kits\10;D:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;D:\Users\Go\bin;D:\Users\MinGW64\mingw64\bin;D:\Users\PHP;D:\Users\Apache24\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\Wang Xishengshun\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Wang Xishengshun\.dotnet\tools;D:\Program Files\Tencent\Tencent Games\QQGameTempest\Hall.57986\;D:\Program Files\JetBrains\PyCharm 2023.3.3\bin;;D:\Program Files\JetBrains\IntelliJ IDEA 2023.3.3\bin;;D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.3\bin;;D:\Users\Wang Xishengshun\AppData\Local\Programs\oh-my-posh\bin;D:\Program Files\JetBrains\PyCharm Community Edition 2024.2.2\bin;;C:\Users\Wang Xishengshun\AppData\Roaming\npm;C:\Users\Wang Xishengshun\go\bin;D:\Users\Rust\.cargo\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.401-b10"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk-1.8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testProtect" classname="net.sourceforge.jdpapi.DataProtectorTestCase" time="0.001"/>
+  <testcase name="testProtectWithEntropy" classname="net.sourceforge.jdpapi.DataProtectorTestCase" time="0.0"/>
+</testsuite>

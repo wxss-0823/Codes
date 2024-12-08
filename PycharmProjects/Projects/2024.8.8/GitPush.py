@@ -31,8 +31,6 @@ def input_exit() -> None :
 # 提交信息
 author = "wxss"
 update_msg = input("Please input the update message: ")
-if update_msg == "exit":
-    os.system("exit\n")
 commit_time = GetTime()
 commit_msg = f"\"{author}: {update_msg} On {commit_time}\""
 
@@ -41,33 +39,38 @@ check_cmd = "git status"
 storage_cmd = "git add --all"
 commit_cmd = "git commit -m " + commit_msg
 push_cmd = "git push -u origin master"
+exit_dict = ["exit", "q", "\n", "quit"]
 
-# 终端信息及执行
-print("[Begin] Execute git automatic upload...")
-# 查询 git 状态
-print("[CMD_1] " + check_cmd)
-os.system(check_cmd)
-# 存储文件
-print("[CMD_2] " + storage_cmd)
-os.system(storage_cmd)
+if update_msg in exit_dict:
+    print(update_msg)
+    os.system("exit")
+else:
+    # 终端信息及执行
+    print("[Begin] Execute git automatic upload...")
+    # 查询 git 状态
+    print("[CMD_1] " + check_cmd)
+    os.system(check_cmd)
+    # 存储文件
+    print("[CMD_2] " + storage_cmd)
+    os.system(storage_cmd)
 
-while True :
-    try :
-        # 提交信息及文件
-        print("[CMD_3] " + commit_cmd)
-        os.system(commit_cmd)
-        # push 到远程库
-        print("[CMD_4] " + push_cmd)
-        if not os.system(push_cmd) :
-            # 结束信息及退出
-            print("[End] finish uploading files to remote repository!\n")
-            input_exit()
-            break
-        else :
-            raise Exception("Git failed!")
-    except Exception as e :
-        if switch(input("Please input q/quit/exit to exit, or input r to retry: ")) == 0 :
-            print(f"[End] {e}")
-            break
-        else :
-            pass
+    while True :
+        try :
+            # 提交信息及文件
+            print("[CMD_3] " + commit_cmd)
+            os.system(commit_cmd)
+            # push 到远程库
+            print("[CMD_4] " + push_cmd)
+            if not os.system(push_cmd) :
+                # 结束信息及退出
+                print("[End] finish uploading files to remote repository!")
+                input_exit()
+                break
+            else :
+                raise Exception("Git failed!")
+        except Exception as e :
+            if switch(input("Please input q/quit/exit to exit, or input r to retry: ")) == 0 :
+                print(f"[End] {e}")
+                break
+            else :
+                pass

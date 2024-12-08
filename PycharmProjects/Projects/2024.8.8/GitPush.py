@@ -10,6 +10,22 @@ import time
 def GetTime() -> str:
     return time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
 
+def switch(case) -> int :
+    if case == "q" or "exit" or "quit" :
+        print("Wait for 5s to exit...")
+        time.sleep(5)
+        return 0
+    elif case == "r" :
+        return 2
+    else :
+        switch(input("Please input correct command: "))
+
+def input_exit() -> None :
+    if input("Please input q/quit/exit to exit: ") == "q" or "quit" or "exit" :
+        os.system("exit")
+    else :
+        input_exit()
+
 
 # 提交信息
 author = "wxss"
@@ -18,7 +34,6 @@ if update_msg == "exit" or "q" or "quit":
     os.system("exit\n")
 commit_time = GetTime()
 commit_msg = f"\"{author}: {update_msg} On {commit_time}\""
-
 
 # 命令集
 check_cmd = "git status"
@@ -34,22 +49,6 @@ os.system(check_cmd)
 # 存储文件
 print("[CMD_2] " + storage_cmd)
 os.system(storage_cmd)
-
-def switch(case) -> int :
-    if case == "q" or "exit" or "quit" :
-        print("Wait for 5s to exit...")
-        time.sleep(5)
-        return 0
-    elif case == "r" :
-        return 2
-    else :
-        switch(input("Please input correct command: "))
-
-def input_exit() -> None :
-    if input("Please input q/quit/exit to exit: ") == "q" or "quit" or "exit" :
-        os.system("exit\n")
-    else :
-        input_exit()
 
 while True :
     try :

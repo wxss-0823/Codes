@@ -22,7 +22,7 @@ def switch(case) -> int :
 
 def input_exit() -> None :
     result = input("Please input q/quit/exit to exit: ")
-    if result == "q" or "quit" or "exit" :
+    if result in exit_dict:
         os.system("exit")
     else :
         input_exit()
@@ -42,7 +42,6 @@ push_cmd = "git push -u origin master"
 exit_dict = ["exit", "q", "\n", "quit"]
 
 if update_msg in exit_dict:
-    print(update_msg)
     os.system("exit")
 else:
     # 终端信息及执行

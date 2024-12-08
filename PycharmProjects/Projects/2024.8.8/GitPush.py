@@ -31,8 +31,7 @@ def input_exit() -> None :
 # 提交信息
 author = "wxss"
 update_msg = input("Please input the update message: ")
-print(update_msg)
-if update_msg == "exit" or "q" or "quit":
+if update_msg == "exit":
     os.system("exit\n")
 commit_time = GetTime()
 commit_msg = f"\"{author}: {update_msg} On {commit_time}\""

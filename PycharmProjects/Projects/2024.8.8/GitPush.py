@@ -40,7 +40,7 @@ while True:
         os.system(commit_cmd)
         # push 到远程库
         print("[CMD_4] " + push_cmd)
-        if not os.system(push_cmd):
+        if os.system(push_cmd):
             raise Exception("Git failed!")
         else:
             break

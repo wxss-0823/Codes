@@ -33,6 +33,18 @@ os.system(check_cmd)
 print("[CMD_2] " + storage_cmd)
 os.system(storage_cmd)
 
+def switch(case) -> int:
+    if case == "q" | "exit" | "quit":
+        # 结束信息及退出
+        print("[End] finish uploading files to remote repository!\n")
+        print("Wait for 5s to exit...")
+        time.sleep(5)
+        return 0
+    elif case == "r":
+        return 2
+    else:
+        switch(input("Please input correct command: "))
+
 while True:
     try:
         # 提交信息及文件
@@ -40,24 +52,13 @@ while True:
         os.system(commit_cmd)
         # push 到远程库
         print("[CMD_4] " + push_cmd)
-        if os.system(push_cmd):
+        if not os.system(push_cmd):
             raise Exception("Git failed!")
         else:
             break
     except Exception as e:
         print(e)
-
-
-# 结束信息及退出
-print("[End] finish uploading files to remote repository!\n")
-
-def switch(case) -> None:
-    if case == "q" | "exit" | "quit":
-        print("Wait for 5s to exit...")
-        time.sleep(5)
-    else:
-        switch(input())
-
-switch(input())
-# print("Wait for 5s to exit...")
-# time.sleep(5)
+        if switch(input("Please input q/quit/exit to exit, or input r to retry: ")) == 0:
+            break
+        else:
+            pass

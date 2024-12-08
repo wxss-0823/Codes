@@ -21,7 +21,8 @@ def switch(case) -> int :
         switch(input("Please input correct command: "))
 
 def input_exit() -> None :
-    if input("Please input q/quit/exit to exit: ") == "q" or "quit" or "exit" :
+    result = input("Please input q/quit/exit to exit: ")
+    if result == "q" or "quit" or "exit" :
         os.system("exit")
     else :
         input_exit()

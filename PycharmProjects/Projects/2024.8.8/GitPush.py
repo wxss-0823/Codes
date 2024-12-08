@@ -13,6 +13,7 @@ def GetTime() -> str:
 
 # 提交信息
 author = "wxss"
+update_msg = input("Please input the update message: ")
 commit_time = GetTime()
 commit_msg = f"\"{author}: {commit_time}\""
 
@@ -39,5 +40,5 @@ print("[CMD_4] " + push_cmd)
 os.system(push_cmd)
 # 结束信息及退出
 print("[End] finish uploading files to remote repository!\n")
-print("Wait for 5s to exit...")
-time.sleep(5)
+# print("Wait for 5s to exit...")
+# time.sleep(5)

@@ -11,7 +11,7 @@ def GetTime() -> str:
     return time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
 
 def switch(case) -> int :
-    if case == "q" or "exit" or "quit" :
+    if case in exit_dict:
         print("Wait for 5s to exit...")
         time.sleep(5)
         return 0

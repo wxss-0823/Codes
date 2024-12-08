@@ -20,12 +20,11 @@ def switch(case) -> int :
     else :
         switch(input("Please input correct command: "))
 
-def input_exit() -> None :
-    result = input("Please input q/quit/exit to exit: ")
-    if result in exit_dict:
+def input_exit(cmd) -> None :
+    if cmd in exit_dict:
         os.system("exit")
     else :
-        input_exit()
+        input_exit(input("Please input correct command: "))
 
 
 # 提交信息
@@ -63,7 +62,7 @@ else:
             if not os.system(push_cmd) :
                 # 结束信息及退出
                 print("[End] finish uploading files to remote repository!")
-                input_exit()
+                input_exit(input("Please input q/quit/exit to exit: "))
                 break
             else :
                 raise Exception("Git failed!")

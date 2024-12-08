@@ -8,7 +8,7 @@ import time
 
 
 def GetTime() -> str:
-    return time.strftime("%y-%m-%d %H:%M:%S", time.localtime())
+    return time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
 
 
 # 提交信息

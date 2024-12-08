@@ -42,12 +42,22 @@ while True:
         print("[CMD_4] " + push_cmd)
         if not os.system(push_cmd):
             raise Exception("Git failed!")
+        else:
+            break
     except Exception as e:
-        Print(e)
-
+        print(e)
 
 
 # 结束信息及退出
 print("[End] finish uploading files to remote repository!\n")
+
+def switch(case) -> None:
+    if case == "q" | "exit" | "quit":
+        print("Wait for 5s to exit...")
+        time.sleep(5)
+    else:
+        switch(input())
+
+switch(input())
 # print("Wait for 5s to exit...")
 # time.sleep(5)

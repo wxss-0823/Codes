@@ -14,6 +14,8 @@ def GetTime() -> str:
 # 提交信息
 author = "wxss"
 update_msg = input("Please input the update message: ")
+if update_msg == "exit" or "q" or "quit":
+    os.system("exit")
 commit_time = GetTime()
 commit_msg = f"\"{author}: {update_msg} On {commit_time}\""
 
@@ -35,8 +37,6 @@ os.system(storage_cmd)
 
 def switch(case) -> int:
     if case == "q" or "exit" or "quit":
-        # 结束信息及退出
-        print("[End] finish uploading files to remote repository!\n")
         print("Wait for 5s to exit...")
         time.sleep(5)
         return 0
@@ -55,10 +55,12 @@ while True:
         if not os.system(push_cmd):
             raise Exception("Git failed!")
         else:
+            # 结束信息及退出
+            print("[End] finish uploading files to remote repository!\n")
             break
     except Exception as e:
-        print(e)
         if switch(input("Please input q/quit/exit to exit, or input r to retry: ")) == 0:
+            print(f"[End] {e}")
             break
         else:
             pass

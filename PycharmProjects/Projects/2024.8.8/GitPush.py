@@ -15,7 +15,7 @@ def GetTime() -> str:
 author = "wxss"
 update_msg = input("Please input the update message: ")
 commit_time = GetTime()
-commit_msg = f"\"{author}: {commit_time}\""
+commit_msg = f"\"{author}: {update_msg} On {commit_time}\""
 
 
 # 命令集

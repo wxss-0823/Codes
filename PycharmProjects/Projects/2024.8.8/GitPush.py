@@ -34,7 +34,7 @@ print("[CMD_2] " + storage_cmd)
 os.system(storage_cmd)
 
 def switch(case) -> int:
-    if case == "q" | "exit" | "quit":
+    if case == "q" or "exit" or "quit":
         # 结束信息及退出
         print("[End] finish uploading files to remote repository!\n")
         print("Wait for 5s to exit...")

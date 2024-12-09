@@ -26,6 +26,12 @@ def input_exit(cmd) -> None :
     else :
         input_exit(input("Please input correct command: "))
 
+# 终端信息
+check_cmd = "git status"
+print("[Begin] Execute git automatic upload...")
+# 查询 git 状态
+print("[CMD_1] " + check_cmd)
+os.system(check_cmd)
 
 # 提交信息
 author = "wxss"
@@ -34,7 +40,6 @@ commit_time = GetTime()
 commit_msg = f"\"{author}: {update_msg} On {commit_time}\""
 
 # 命令集
-check_cmd = "git status"
 storage_cmd = "git add --all"
 commit_cmd = "git commit -m " + commit_msg
 push_cmd = "git push -u origin master"
@@ -43,11 +48,6 @@ exit_dict = ["exit", "q", "\n", "quit"]
 if update_msg in exit_dict:
     os.system("exit")
 else:
-    # 终端信息及执行
-    print("[Begin] Execute git automatic upload...")
-    # 查询 git 状态
-    print("[CMD_1] " + check_cmd)
-    os.system(check_cmd)
     # 存储文件
     print("[CMD_2] " + storage_cmd)
     os.system(storage_cmd)

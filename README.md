@@ -4,7 +4,7 @@
 2. 本人目前正在学习manimgl的数学动画制作，下面是一个小成果；
     1. 黎曼积分，由无限求和转化为积分号的数学可视化
 <center class = "half">
-    <img src="./Resource/videos/R_IExample.gif"  width="50%" height="auto" align = left><img src="./Resource/videos/FuncExample.gif" width="50%" height="auto" align = right>
+    <img src="./PycharmProjects/Mainm/Resource/videos/R_IExample.gif"  width="50%" height="auto" align = left><img src="./PycharmProjects/Mainm/Resource/videos/FuncExample.gif" width="50%" height="auto" align = right>
 </center>
 
 3. 闲暇时候大多在寻找有趣的实例，还没找到系统性学习的方法。

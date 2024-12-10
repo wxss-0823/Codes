@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-1.8/lib/sqlite-jdbc-3.47.0.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-1.8/lib/jdpapi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/RedisConnection/assets/jedis-5.2.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

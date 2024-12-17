@@ -1,0 +1,11 @@
+{
+	"font_face": "JetBrains Mono",
+	"font_size": 12,
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"word_wrap":"true"
+}

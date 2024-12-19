@@ -18,3 +18,19 @@ mingw32-gcc -O2 -c -o src/ls_mysql.o -ID:/Users/ProjectFiles/Codes/VSCode/Lua/lu
 
 # link .o for dll
 mingw32-gcc  -shared -o luasql/mysql.dll src/luasql.o src/ls_mysql.o -LD:/Users/MySQL/mysql-9.1.0-winx64/lib -lmysqlclient D:\Users\ProjectFiles\Codes\VSCode\Lua\lua\lua54.dll -lm
+
+mingw32-gcc -shared -o luasql/mysql.dll src/luasql.o src/ls_mysql.o -LD:/Users/MySQL/mysql-9.1.0-winx64/lib -lmysqlclient -LD:/Users/ProjectFiles/Codes/VSCode/Lua/lua -llua54 -lm
+
+# 1. 转换 lua54.dll 为 liblua54.a
+pexports D:/Users/ProjectFiles/Codes/VSCode/Lua/lua/lua54.dll > lua54.def dlltool -d lua54.def -l liblua54.a
+move liblua54.a D:/Users/ProjectFiles/Codes/VSCode/Lua/lua/lib
+
+# 2. 转换 libmysqlclient.dll 为 libmysqlclient.a
+pexports D:/Users/MySQL/mysql-9.1.0-winx64/bin/libmysqlclient.dll > libmysqlclient.def
+dlltool -d libmysqlclient.def -l libmysqlclient.a
+move libmysqlclient.a D:/Users/MySQL/mysql-9.1.0-winx64/lib
+
+# 3. 链接生成 luasql/mysql.dll
+mingw32-gcc -shared -o luasql/mysql.dll src/luasql.o src/ls_mysql.o \
+-LD:/Users/MySQL/mysql-9.1.0-winx64/lib -lmysqlclient \
+-LD:/Users/ProjectFiles/Codes/VSCode/Lua/lua/lib -llua54 -lm

@@ -10,9 +10,21 @@ print("Connection successfully!")
 
 local cur = conn:execute("select curdate();")
 
-result = cur:fetch({}, "a")
+local result = cur:fetch({}, "a")
 
 print(result["curdate()"])
 
+local cur = conn:execute("select * from users;")
+
+while result do 
+    result = cur:fetch(result, "a")
+    if result ~= nil then
+        for index, value in pairs(result) do
+        print(index .. ": " .. value)
+        end
+    end
+end
+
+cur:close()   --关闭数据库指针
 conn:close()  --关闭数据库连接
 env:close()   --关闭数据库环境

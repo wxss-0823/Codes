@@ -14,7 +14,8 @@ from email.mime.image import MIMEImage
 
 sender = '2198993328@qq.com'    # 发件人邮箱
 pw = 'qoffjutxwrqkebde'         # 授权码
-receiver = '2890344780@qq.com'  # 收件人邮箱
+# receiver = '2890344780@qq.com'  # 收件人邮箱
+receiver = '2198993328@qq.com'  # 收件人邮箱
 
 
 def sendEmail():

@@ -1,7 +1,9 @@
 use MIME::Lite;
+use Net::SMTP;
 
 # 接收邮箱
-$to = 'wangxishengshun@gmail.com';
+$to = '2198993328@qq.com';
+$cc = $to;
 $user = '2198993328@qq.com';
 $pass = "gbvqgjrxgjmndidd";
 
@@ -9,16 +11,21 @@ $pass = "gbvqgjrxgjmndidd";
 $from = '2198993328@qq.com';
 # 标题
 $subject = 'Test Mail 1';
-$message = "This is a message.";
+$message = 'This is a message.';
 
 $msg = MIME::Lite->new(
     From => $from,
     To => $to,
+    Cc => $cc,
     Subject => $subject,
-    Data => $message
+    Type => 'multipart/mixed'
 );
 
-$msg->send('smtp','smtp.qq.com', Debug => 1, SSL => 1, Port => 465, Timeout=>60, AuthUser=>$user, AuthPass=>$pass);
-# $msg->send();
+$msg->attach (
+    Type => 'TEXT',
+    Data => $message
+);# 指定附件信息
 
-print "Main is sent successfully!"
+$msg->send('smtp','smtp.qq.com', Debug => 1, SSL => 1, Port => 465, AuthUser=>$user, AuthPass=>$pass);
+
+# print "Main is sent successfully!"

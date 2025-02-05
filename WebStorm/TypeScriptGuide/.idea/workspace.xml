@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be81febd-91a5-4dd5-aa38-aeeaba06eafd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Calc.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CalcTest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CalcThirdPartyJsLib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JSThirdPartyLib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trait.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/0_Server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/HelloWorld.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trait.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeScriptTest/1_Trait.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeScriptTest/0_Index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.0_Server.js.executor": "Debug",
     "Node.js.CalcTest.ts.executor": "Run",
     "Node.js.JSThirdPartyLib.js.executor": "Run",
     "Node.js.Trait.ts.executor": "Run",
@@ -68,15 +68,20 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
+    "settings.editor.selected.configurable": "settings.sync",
     "ts.external.directory.path": "D:\\Users\\ProjectFiles\\Codes\\WebStorm\\TypeScriptGuide\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\ProjectFiles\Codes\WebStorm\TypeScriptGuide\src\TypeScriptTest" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.120" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -93,7 +98,10 @@
       <workItem from="1737213490884" duration="1313000" />
       <workItem from="1737378109435" duration="2783000" />
       <workItem from="1737456475861" duration="2667000" />
-      <workItem from="1737507616345" duration="5935000" />
+      <workItem from="1737507616345" duration="7337000" />
+      <workItem from="1738767055454" duration="416000" />
+      <workItem from="1738767602423" duration="42000" />
+      <workItem from="1738767660995" duration="549000" />
     </task>
     <servers />
   </component>

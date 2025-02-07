@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Files (x86)\\项目文件\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj": {}
+    "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj": {}
   },
   "projects": {
-    "D:\\Program Files (x86)\\项目文件\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj": {
+    "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Files (x86)\\项目文件\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj",
+        "projectUniqueName": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj",
         "projectName": "18.Exception",
-        "projectPath": "D:\\Program Files (x86)\\项目文件\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj",
+        "projectPath": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\18.Exception.csproj",
         "packagesPath": "C:\\Users\\Wang Xishengshun\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Files (x86)\\项目文件\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\obj\\",
+        "outputPath": "D:\\Users\\ProjectFiles\\Codes\\VisualStudio\\C#_Guide\\BasicLearning\\18.Exception\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Wang Xishengshun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -55,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

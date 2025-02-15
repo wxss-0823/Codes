@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be81febd-91a5-4dd5-aa38-aeeaba06eafd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/1_Stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/1_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/1_output.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/3_TransformStream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/4_PauseStream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Node_jsTest/5_FunctionTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wxss-0823&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:wxss-0823/Codes.git&quot;,
+    &quot;accountId&quot;: &quot;59f8d0cb-66fc-44ba-a74e-477182ebdcc5&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2rkoqeEyKFTJhjlx0f2vRS91cnA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.0_Server.js.executor": "Debug",
+    "Node.js.1_Stream.js.executor": "Run",
+    "Node.js.3_TransformStream.js.executor": "Run",
+    "Node.js.4_PauseStream.js.executor": "Run",
+    "Node.js.5_FunctionTest.js.executor": "Run",
+    "Node.js.CalcTest.ts.executor": "Run",
+    "Node.js.JSThirdPartyLib.js.executor": "Run",
+    "Node.js.Trait.ts.executor": "Run",
+    "Node.js.index.ts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.18.0",
+    "javascript.nodejs.core.library.typings.version": "20.17.17",
+    "last_opened_file_path": "D:/Users/ProjectFiles/Codes/WebStorm/TypeScriptGuide",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "D:\\Users\\ProjectFiles\\Codes\\WebStorm\\TypeScriptGuide\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\ProjectFiles\Codes\WebStorm\TypeScriptGuide\src\TypeScriptTest" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be81febd-91a5-4dd5-aa38-aeeaba06eafd" name="Changes" comment="" />
+      <created>1737112625170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737112625170</updated>
+      <workItem from="1737112626220" duration="66000" />
+      <workItem from="1737112735331" duration="3108000" />
+      <workItem from="1737213490884" duration="1313000" />
+      <workItem from="1737378109435" duration="2783000" />
+      <workItem from="1737456475861" duration="2667000" />
+      <workItem from="1737507616345" duration="7337000" />
+      <workItem from="1738767055454" duration="416000" />
+      <workItem from="1738767602423" duration="42000" />
+      <workItem from="1738767660995" duration="549000" />
+      <workItem from="1738931430190" duration="11000" />
+      <workItem from="1739110163478" duration="2243000" />
+      <workItem from="1739283246120" duration="1363000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

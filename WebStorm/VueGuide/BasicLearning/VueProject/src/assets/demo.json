@@ -1,0 +1,9 @@
+{
+    "book1":"xxx",
+    "book2":"yyy",
+    "book3":"zzz",
+    "URL":["douyin.com", "douyu.com", "qqmail.com"],
+    "food":{"meat":"pork","vegetable":"carrot"},
+    "date":"2013-12-14",
+    "birthday":"function () {return 0823;}"
+}

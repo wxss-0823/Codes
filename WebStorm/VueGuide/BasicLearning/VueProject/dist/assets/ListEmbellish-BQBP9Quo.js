@@ -1,0 +1,1 @@
+import{_ as n,c as e,a as s,F as i,r as o,o as t,t as c}from"./index-D0iXmHvy.js";const l={data(){return{items:[{id:1,name:"Vue 3"},{id:2,name:"JavaScript"},{id:3,name:"HTML5"}]}}};function u(d,m,p,_,r,f){return t(),e("div",null,[s("ul",null,[(t(!0),e(i,null,o(r.items,a=>(t(),e("li",{key:a.id},c(a.name),1))),128))])])}const x=n(l,[["render",u]]);export{x as default};

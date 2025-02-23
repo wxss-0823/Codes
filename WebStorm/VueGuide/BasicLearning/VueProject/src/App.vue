@@ -4,6 +4,7 @@ import HelloVue from "./components/HelloVue.vue"
 // import ListEmbellish from "./components/ListEmbellish.vue";
 
 import { RouterView, RouterLink} from "vue-router";
+import AjaxGet from "@/components/AjaxGet.vue";
 </script>
 
 <template>
@@ -25,6 +26,10 @@ import { RouterView, RouterLink} from "vue-router";
       <br>
       <RouterLink to="/cdt">Conditional Embellish</RouterLink>
       <RouterView></RouterView>
+    </div>
+
+    <div>
+      <AjaxGet></AjaxGet>
     </div>
   </main>
 </template>

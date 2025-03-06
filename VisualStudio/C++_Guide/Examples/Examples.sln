@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teris", "Teris\Teris.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibraryManagement", "LibraryManagement\LibraryManagement.vcxproj", "{11A01F14-D942-46F8-968F-54D65090BA61}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DebugTest", "DebugTest\DebugTest.vcxproj", "{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{11A01F14-D942-46F8-968F-54D65090BA61}.Release|x64.Build.0 = Release|x64
 		{11A01F14-D942-46F8-968F-54D65090BA61}.Release|x86.ActiveCfg = Release|Win32
 		{11A01F14-D942-46F8-968F-54D65090BA61}.Release|x86.Build.0 = Release|Win32
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Debug|x64.ActiveCfg = Debug|x64
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Debug|x64.Build.0 = Debug|x64
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Debug|x86.Build.0 = Debug|Win32
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Release|x64.ActiveCfg = Release|x64
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Release|x64.Build.0 = Release|x64
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Release|x86.ActiveCfg = Release|Win32
+		{B6CEE1CB-A798-49EA-9A78-1FD73875AEDF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

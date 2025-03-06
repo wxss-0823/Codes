@@ -1,2 +1,11 @@
-﻿  LINK : 没有找到 D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C++_Guide\Examples\x64\Debug\Teris.exe 或上一个增量链接没有生成它；正在执行完全链接
-  Teris.vcxproj -> D:\Users\Wang Xishengshun\OneDrive\Documents\Codes\VisualStudio\C++_Guide\Examples\x64\Debug\Teris.exe
+﻿  main.cpp
+D:\Users\ProjectFiles\Codes\VisualStudio\C++_Guide\Examples\Teris\main.cpp(133,26): error C3688: invalid literal suffix 'ms'; literal operator or literal operator template 'operator ""ms' not found
+D:\Users\ProjectFiles\Codes\VisualStudio\C++_Guide\Examples\Teris\main.cpp(133,16): error C2672: 'std::this_thread::sleep_for': no matching overloaded function found
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(222,10):
+      could be 'void std::this_thread::sleep_for(const std::chrono::duration<_Rep,_Period> &)'
+  
+D:\Users\ProjectFiles\Codes\VisualStudio\C++_Guide\Examples\Teris\main.cpp(233,27): error C3688: invalid literal suffix 'ms'; literal operator or literal operator template 'operator ""ms' not found
+D:\Users\ProjectFiles\Codes\VisualStudio\C++_Guide\Examples\Teris\main.cpp(233,17): error C2672: 'std::this_thread::sleep_for': no matching overloaded function found
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(222,10):
+      could be 'void std::this_thread::sleep_for(const std::chrono::duration<_Rep,_Period> &)'
+  

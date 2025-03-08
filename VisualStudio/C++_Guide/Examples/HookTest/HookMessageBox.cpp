@@ -10,7 +10,7 @@ void Unhook(void* src, int len) {
 	VirtualProtect(MessageBoxW, len, old, &old);
 }
 
-void Hook(void* src, void* tar, int len) {
+void Hook32(void* src, void* tar, int len) {
 	DWORD old;
 	VirtualProtect(src, len, PAGE_EXECUTE_READWRITE, &old);
 	memcpy(BACKUP, src, len);
@@ -33,14 +33,14 @@ int WINAPI MyMsgBoxW(
 	lpText = L"Hook";
 	Unhook(MessageBoxW, 5);
 	MessageBoxW(hWnd, lpText, lpCaption, uType);
-	Hook(MessageBoxW, MyMsgBoxW, 5);
+	Hook32(MessageBoxW, MyMsgBoxW, 5);
 	return 0;
 }
 
 
 int main() {
 	//MyMsgBoxW(0, L"Hook", 0, 0);
-	Hook(MessageBoxW, MyMsgBoxW, 5);
+	Hook32(MessageBoxW, MyMsgBoxW, 5);
 	MessageBoxW(0, L"Hello", 0, 0);
 	MessageBoxW(0, L"Hello", 0, 0);
 	MessageBoxW(0, L"Hello", 0, 0);

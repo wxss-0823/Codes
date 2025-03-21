@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gcdOfStrings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Resolution.cpp" />
   </ItemGroup>

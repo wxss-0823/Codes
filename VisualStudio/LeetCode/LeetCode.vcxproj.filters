@@ -21,6 +21,9 @@
     <ClCompile Include="Resolution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gcdOfStrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resolution.h">

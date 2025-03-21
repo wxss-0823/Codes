@@ -11,7 +11,11 @@ int main() {
 	//cout << result;
 
 	// call gcdOfStrings
-	string result = resolution.gcdOfStrings("OBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNO", "OBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNOOBCNO");
+	string result = resolution.gcdOfStrings(
+		"AABBAABBAA"
+		,
+		"AABB"
+	);
 	cout << result;
 
 }

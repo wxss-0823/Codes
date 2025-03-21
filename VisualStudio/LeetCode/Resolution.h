@@ -6,7 +6,8 @@ class Resolution
 {
 private:
     bool isSubStr(string subString, string str);
-    string CpyStringNTimes(string str, int times);
+    string cpyStringNTimes(string str, int times);
+    int gcd(int n1, int n2);
 
 public:
     string mergeAlternately(string word1, string word2);

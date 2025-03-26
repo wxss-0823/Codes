@@ -1,21 +1,21 @@
 #include <iostream>
-#include "Resolution.h"
+#include <sstream>
+#include "Solution.h"
 using namespace std;
 
 
 int main() {
-	Resolution resolution;
+	Solution solution;
 
 	// call mergeAlternately
-	//string result = resolution.mergeAlternately("ab", "pqrs");
-	//cout << result;
+	//string result = solution.mergeAlternately("ab", "pqrs");
 
 	// call gcdOfStrings
-	string result = resolution.gcdOfStrings(
-		"AABBAABBAA"
-		,
-		"AABB"
-	);
-	cout << result;
+	//string result = solution.gcdOfStrings("AABBAABBAA", "AABB");
+
+	// call kidWithCandies
+	//vector<int> vec = { 2, 3, 5, 1, 3 };
+	//vector<bool> result = solution.kidWithCandies(vec, 3);
+
 
 }

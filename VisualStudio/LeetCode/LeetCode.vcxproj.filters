@@ -18,15 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Resolution.cpp">
+    <ClCompile Include="MergeAlternately.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gcdOfStrings.cpp">
+    <ClCompile Include="GCDOfStrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KidWithCandies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Resolution.h">
+    <ClInclude Include="Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

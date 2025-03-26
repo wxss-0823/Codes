@@ -127,12 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gcdOfStrings.cpp" />
+    <ClCompile Include="GCDOfStrings.cpp" />
+    <ClCompile Include="KidWithCandies.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Resolution.cpp" />
+    <ClCompile Include="MergeAlternately.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Resolution.h" />
+    <ClInclude Include="Solution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

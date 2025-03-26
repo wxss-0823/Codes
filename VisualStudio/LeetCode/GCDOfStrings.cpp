@@ -1,7 +1,7 @@
-#include "Resolution.h"
+#include "Solution.h"
 
 
-bool Resolution::isSubStr(string subStr, string str)
+bool Solution::isSubStr(string subStr, string str)
 {
     if (str.length() % subStr.length() != 0)
         return false;
@@ -13,7 +13,7 @@ bool Resolution::isSubStr(string subStr, string str)
     return true;
 }
 
-string Resolution::cpyStringNTimes(string str, int times)
+string Solution::cpyStringNTimes(string str, int times)
 {
     string cpyString;
     for (int i = 0; i < times; i++)
@@ -23,12 +23,12 @@ string Resolution::cpyStringNTimes(string str, int times)
     return cpyString;
 }
 
-int Resolution::gcd(int greater, int less)
+int Solution::gcd(int greater, int less)
 {
     return less == 0 ? greater : gcd(less, greater % less);
 }
 
-string Resolution::gcdOfStrings(string str1, string str2)
+string Solution::gcdOfStrings(string str1, string str2)
 {
     int nTempLength = 0;
     int nMatchLength = 1;

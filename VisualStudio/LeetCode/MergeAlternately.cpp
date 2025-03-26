@@ -1,7 +1,7 @@
-#include "Resolution.h"
+#include "Solution.h"
 using namespace std;
 
-string Resolution::mergeAlternately(string word1, string word2)
+string Solution::mergeAlternately(string word1, string word2)
 {
     int nFlagLength1, nLength1, nFlagLength2, nLength2, nMaxLength;
     nFlagLength1 = nLength1 = word1.length();

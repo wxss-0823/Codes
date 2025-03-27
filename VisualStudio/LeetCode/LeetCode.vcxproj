@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CanPlaceFlowers.cpp" />
     <ClCompile Include="GCDOfStrings.cpp" />
     <ClCompile Include="KidWithCandies.cpp" />
     <ClCompile Include="main.cpp" />

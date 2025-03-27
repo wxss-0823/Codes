@@ -17,5 +17,11 @@ int main() {
 	//vector<int> vec = { 2, 3, 5, 1, 3 };
 	//vector<bool> result = solution.kidWithCandies(vec, 3);
 
+	// call canPlaceFlowers
+	vector<int> flowerbed = {0, 0, 0, 0, 1};
+	int num = 3;
+	bool result = solution.canPlaceFlowers(flowerbed, num);
+
+	cout << result;
 
 }

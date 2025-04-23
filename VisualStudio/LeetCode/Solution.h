@@ -19,6 +19,7 @@ public:
     string gcdOfStrings(string str1, string str2);
     vector<bool> kidWithCandies(vector<int>& candies, int extraCandies);
     bool canPlaceFlowers(vector<int>& flowerbed, int n);
+    string reverseVowels(string str);
 
 };
     

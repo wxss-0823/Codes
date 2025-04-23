@@ -18,9 +18,13 @@ int main() {
 	//vector<bool> result = solution.kidWithCandies(vec, 3);
 
 	// call canPlaceFlowers
-	vector<int> flowerbed = {0, 0, 0, 0, 1};
-	int num = 3;
-	bool result = solution.canPlaceFlowers(flowerbed, num);
+	//vector<int> flowerbed = {0, 0, 0, 0, 1};
+	//int num = 3;
+	//bool result = solution.canPlaceFlowers(flowerbed, num);
+
+	// call ReverseVowels
+	string s = "leetcode";
+	string result = solution.reverseVowels(s);
 
 	cout << result;
 

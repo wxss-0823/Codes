@@ -133,6 +133,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MergeAlternately.cpp" />
     <ClCompile Include="ReverseVowels.cpp" />
+    <ClCompile Include="ReverseWords.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h" />

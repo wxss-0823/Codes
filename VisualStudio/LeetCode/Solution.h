@@ -20,6 +20,7 @@ public:
     vector<bool> kidWithCandies(vector<int>& candies, int extraCandies);
     bool canPlaceFlowers(vector<int>& flowerbed, int n);
     string reverseVowels(string str);
+    string reverWords(string str);
 
 };
     

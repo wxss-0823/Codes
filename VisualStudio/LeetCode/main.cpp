@@ -23,8 +23,11 @@ int main() {
 	//bool result = solution.canPlaceFlowers(flowerbed, num);
 
 	// call ReverseVowels
-	string s = "leetcode";
-	string result = solution.reverseVowels(s);
+	//string s = "leetcode";
+	//string result = solution.reverseVowels(s);
+
+	string str = "a good   example";
+	string result = solution.reverWords(str);
 
 	cout << result;
 

@@ -12,6 +12,8 @@ private:
     int gcd(int n1, int n2);
     // KidWithCandies
     int findVectorMaxElement(vector<int>& vec);
+    // Compress
+    vector<char>::iterator insertInt(vector<char>& tar, int src, vector<char>::iterator initPosition, int recursionFlag);
 
 
 public:
@@ -21,6 +23,9 @@ public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n);
     string reverseVowels(string str);
     string reverWords(string str);
+    vector<int> productExceptSelf(vector<int>& nums);
+    bool increasingTriplet(vector<int>& nums);
+    vector<char> compress(vector<char>& chars);
 
 };
     

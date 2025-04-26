@@ -128,10 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CanPlaceFlowers.cpp" />
+    <ClCompile Include="Compress.cpp" />
     <ClCompile Include="GCDOfStrings.cpp" />
+    <ClCompile Include="IncreasingTriplet.cpp" />
     <ClCompile Include="KidWithCandies.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MergeAlternately.cpp" />
+    <ClCompile Include="ProductExceptSelf.cpp" />
     <ClCompile Include="ReverseVowels.cpp" />
     <ClCompile Include="ReverseWords.cpp" />
   </ItemGroup>

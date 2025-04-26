@@ -22,12 +22,35 @@ int main() {
 	//int num = 3;
 	//bool result = solution.canPlaceFlowers(flowerbed, num);
 
-	// call ReverseVowels
+	// call reverseVowels
 	//string s = "leetcode";
 	//string result = solution.reverseVowels(s);
 
-	string str = "a good   example";
-	string result = solution.reverWords(str);
+	// call reverseWords
+	//string str = "a good   example";
+	//string result = solution.reverWords(str);
+
+	// call productExceptSelf
+	//vector<int> nums = { 1, 2, 3, 4 };
+	//vector<int> result = solution.productExceptSelf(nums);
+	//for (int i = 0; i < nums.size(); i++) {
+	//	cout << result[i] << ' ';
+	//}
+
+	// call increasingTriplet
+	//vector<int> nums = { 1 };
+	//bool result = solution.increasingTriplet(nums);
+
+	// call compress
+	//vector<char> chars = { 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 
+	//'b', 'b', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c'};
+	//vector<char> result = solution.compress(chars);
+	//for (auto i : result) {
+	//	cout << i << ' ';
+	//}
+
+
+
 
 	cout << result;
 

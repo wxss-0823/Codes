@@ -49,8 +49,21 @@ int main() {
 	//	cout << i << ' ';
 	//}
 
+	// call moveZeroes
+	//vector<int> nums = { 0, 1, 0, 3, 12 };
+	//vector<int> result = solution.moveZeroes(nums);
+	//for (auto e : result) {
+	//	cout << e << ' ';
+	//}
+	
+	// call isSubsequence
+	//string s, t;
+	//s = "axc", t = "ahbgdc";
+	//bool result = solution.isSubsequence(s, t);
 
-
+	// call maxArea
+	vector<int> height = { 1, 1 };
+	int result = solution.maxArea(height);
 
 	cout << result;
 

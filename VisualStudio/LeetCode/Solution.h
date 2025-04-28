@@ -5,6 +5,7 @@ using namespace std;
 
 class Solution
 {
+// vector & string
 private:
     // GCDOfStrings
     bool isSubStr(string subString, string str);
@@ -15,7 +16,7 @@ private:
     // Compress
     vector<char>::iterator insertInt(vector<char>& tar, int src, vector<char>::iterator initPosition, int recursionFlag);
 
-
+// vector & string
 public:
     string mergeAlternately(string word1, string word2);
     string gcdOfStrings(string str1, string str2);
@@ -26,6 +27,13 @@ public:
     vector<int> productExceptSelf(vector<int>& nums);
     bool increasingTriplet(vector<int>& nums);
     vector<char> compress(vector<char>& chars);
+
+// two-way pointer
+public:
+    vector<int>& moveZeroes(vector<int>& nums);
+    bool isSubsequence(string s, string t);
+    int maxArea(vector<int>& height);
+
 
 };
     

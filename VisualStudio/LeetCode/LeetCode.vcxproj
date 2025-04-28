@@ -131,9 +131,12 @@
     <ClCompile Include="Compress.cpp" />
     <ClCompile Include="GCDOfStrings.cpp" />
     <ClCompile Include="IncreasingTriplet.cpp" />
+    <ClCompile Include="IsSubsequence.cpp" />
     <ClCompile Include="KidWithCandies.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaxArea.cpp" />
     <ClCompile Include="MergeAlternately.cpp" />
+    <ClCompile Include="MoveZeroes.cpp" />
     <ClCompile Include="ProductExceptSelf.cpp" />
     <ClCompile Include="ReverseVowels.cpp" />
     <ClCompile Include="ReverseWords.cpp" />

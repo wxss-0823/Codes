@@ -33,7 +33,7 @@ public:
     vector<int>& moveZeroes(vector<int>& nums);
     bool isSubsequence(string s, string t);
     int maxArea(vector<int>& height);
-
+    int maxOperations(vector<int>& nums, int k);
 
 };
     

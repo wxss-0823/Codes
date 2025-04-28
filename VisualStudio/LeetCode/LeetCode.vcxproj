@@ -135,6 +135,7 @@
     <ClCompile Include="KidWithCandies.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MaxArea.cpp" />
+    <ClCompile Include="MaxOperations.cpp" />
     <ClCompile Include="MergeAlternately.cpp" />
     <ClCompile Include="MoveZeroes.cpp" />
     <ClCompile Include="ProductExceptSelf.cpp" />

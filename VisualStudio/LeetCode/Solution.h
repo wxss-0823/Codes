@@ -15,8 +15,11 @@ private:
     int findVectorMaxElement(vector<int>& vec);
     // Compress
     vector<char>::iterator insertInt(vector<char>& tar, int src, vector<char>::iterator initPosition, int recursionFlag);
+
+// two-ways pointer
+private:
     // MaxOperations
-    int removeTwoAddend(vector<int>& posA, vector<int>& posB, vector<int>& nums, bool parityFlag = 0);
+    bool removeTwoAddend(vector<int>& posA, vector<int>& posB, vector<int>& nums, bool parityFlag = 0);
 
 // vector & string
 public:

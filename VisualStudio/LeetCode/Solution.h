@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <map>
+#include <unordered_map>
 using namespace std;
 
 class Solution
@@ -15,11 +17,6 @@ private:
     int findVectorMaxElement(vector<int>& vec);
     // Compress
     vector<char>::iterator insertInt(vector<char>& tar, int src, vector<char>::iterator initPosition, int recursionFlag);
-
-// two-ways pointer
-private:
-    // MaxOperations
-    bool removeTwoAddend(vector<int>& posA, vector<int>& posB, vector<int>& nums, bool parityFlag = 0);
 
 // vector & string
 public:

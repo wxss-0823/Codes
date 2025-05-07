@@ -66,52 +66,14 @@ int main() {
 	//int result = solution.maxArea(height);
 
 	// call maxOperations
-	vector<int> nums = { 73, 74, 74, 71, 68, 67, 45, 1, 24, 2, 26, 48, 82, 82, 28, 60, 19, 36, 26, 9, 12, 83, 1, 86, 18, 78, 14, 66, 20, 26, 4, 80, 44, 35, 53, 48, 74, 25, 75, 47, 31, 20, 59, 10, 35, 24, 26, 3, 48, 69, 78, 43, 12, 86, 37, 49, 1, 90, 20, 35, 58, 20, 2, 20, 16, 18, 88, 25, 44, 63, 12, 16, 64, 41, 86, 87, 2, 23, 14, 63, 43, 60, 47, 7, 23, 11, 64, 53, 71, 78, 82, 56, 65, 25, 27, 52, 89, 68, 63, 14, 48 };
-	int k = 44;
-	//int originLen = nums.size();
-	//vector<int> numCounter;
+	//vector<int> nums = { 73, 74, 74, 71, 68, 67, 45, 1, 24, 2, 26, 48, 82, 82, 28, 60, 19, 36, 26, 9, 12, 83, 1, 86, 18, 78, 14, 66, 20, 26, 4, 80, 44, 35, 53, 48, 74, 25, 75, 47, 31, 20, 59, 10, 35, 24, 26, 3, 48, 69, 78, 43, 12, 86, 37, 49, 1, 90, 20, 35, 58, 20, 2, 20, 16, 18, 88, 25, 44, 63, 12, 16, 64, 41, 86, 87, 2, 23, 14, 63, 43, 60, 47, 7, 23, 11, 64, 53, 71, 78, 82, 56, 65, 25, 27, 52, 89, 68, 63, 14, 48 };
+	//int k = 44;
+	//int result = solution.maxOperations(nums, k);
 
-	//for (int i = 0; i < k + 1; i++) {
-	//	nums.erase(remove(nums.begin(), nums.end(), i), nums.end());
-	//	numCounter.push_back(originLen - nums.size());
-	//	originLen = nums.size();
-	//}
-
-	//for (int i = 0; i < k + 1; i++) {
-	//	cout << i << ' ';
-	//}
-
-	//cout << "\n";
-
-	//for (int i = 0; i < 10; i++) {
-	//	cout << numCounter[i] << ' ';
-	//}
-	//for (int i = 10; i < numCounter.size(); i++) {
-	//	cout << ' ' << numCounter[i] <<  ' ';
-	//}
-	//
-	//cout << "\n";
-
-
-
-	//for (int i = 0; i < ceil(k / 2.0 + 0.1); i++) {
-	//	cout << i << ' ';
-	//}
-
-	//cout << "\n";
-
-	//int sum = 0;
-
-	//for (int i = 0; i < 10; i++) {
-	//	cout << min(numCounter[i], numCounter[k - i]) << ' ';
-	//	sum += min(numCounter[i], numCounter[k - i]);
-	//}
-	//for (int i = 10; i < ceil(k / 2.0 + 0.1); i++) {
-	//	cout << ' ' << min(numCounter[i], numCounter[k - i]) << ' ';
-	//	sum += min(numCounter[i], numCounter[k - i]);
-	//}
-
-	int result = solution.maxOperations(nums, k);
+	// call findMaxAverage
+	vector<int> nums = { 9,7,3,5,6,2,0,8,1,9 };
+	int k = 6;
+	double result = solution.findMaxAverage(nums, k);
 
 	cout << result;
 

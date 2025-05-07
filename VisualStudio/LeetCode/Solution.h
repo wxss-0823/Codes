@@ -37,6 +37,10 @@ public:
     int maxArea(vector<int>& height);
     int maxOperations(vector<int>& nums, int k);
 
+// slider window
+public:
+    double findMaxAverage(vector<int>& nums, int k);
+
 };
     
 

@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="CanPlaceFlowers.cpp" />
     <ClCompile Include="Compress.cpp" />
+    <ClCompile Include="FindMaxAverage.cpp" />
     <ClCompile Include="GCDOfStrings.cpp" />
     <ClCompile Include="IncreasingTriplet.cpp" />
     <ClCompile Include="IsSubsequence.cpp" />

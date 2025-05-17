@@ -1,0 +1,27 @@
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 1, 1, 0),
+    prodvers=(0, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x4,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+    StringTable(
+      u'040904B0',
+      [StringStruct(u'CompanyName', u'Coffee'),
+      StringStruct(u'FileDescription', u'For auto pushing files'),
+      StringStruct(u'FileVersion', u'1.1.0'),
+      StringStruct(u'InternalName', u'Git App'),
+      StringStruct(u'LegalCopyright', u'© Coffee Wang. All Rights Reserved.'),
+      StringStruct(u'OriginalFilename', u'GitPush.exe'),
+      StringStruct(u'ProductName', u'Git Push'),
+      StringStruct(u'ProductVersion', u'1.1.0')])
+    ]),
+    VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
+  ]
+)

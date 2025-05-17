@@ -10,7 +10,7 @@ import time
 def GetTime() -> str:
     return time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
 
-def switch(case) -> int :
+def switch(case) -> int:
     if case in exit_dict:
         print("Wait for 5s to exit...")
         time.sleep(5)
@@ -19,6 +19,7 @@ def switch(case) -> int :
         return 2
     else :
         switch(input("Please input correct command: "))
+        return -1
 
 def input_exit(cmd) -> None :
     if cmd in exit_dict:

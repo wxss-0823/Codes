@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+
+% -----设置英文字体----- %
+\usepackage{fontspec}
+% 设置英文正文罗马族字体
+\setmainfont{Times New Roman}
+% 设置英文正文无衬线族字体
+\setsansfont{Times New Roman}
+% 设置英文正文等宽族字体
+\setmonofont{Times New Roman}
+
+\usepackage{circuitikz}
+\ctikzset{logic ports=ieee}
+\usetikzlibrary{calc}			% use calc func of TikZ
+
+\begin{document}
+\begin{circuitikz}[scale=0.7, transform shape]		% transform shape must be added for regular work
+\def\vlen{0.8}
+% painting operations
+% \draw [step=1,gray,very thin,cap=round] (0, 0) grid (5,5);
+\draw (2,1) node [nand port] (G1) {};
+\node [above, scale=0.8] at (2,-0.1) {G2};
+\draw (2,3.8) node[nand port] (G2) {};
+\node [below, scale=0.8] at (2, 3.2) {G1};
+
+\draw [line cap=round](G1.out) -- ++(0, \vlen) node [below] (g1o) {};
+\draw [line cap=round](G2.in 2) -- ++(0, -\vlen) -- (g1o.north);
+\draw [line cap=round](G2.out) -- ++(0, -\vlen) node [below] (g2o) {};
+\draw [line cap=round](G1.in 1) -- ++(0, \vlen) -- (g2o.north);
+
+\draw [line cap=round](G1.out) -- ++(0.5,0) node [right] {Q'};
+\fill (G1.out) circle (2pt);
+\draw [line cap=round](G2.out) -- ++(0.5,0) node [right] {Q};
+\fill (G2.out) circle (2pt);
+
+\draw [line cap=round](G1.in 2) -- ++(-1, 0) node [left] (R) {R};
+\draw [line cap=round](G2.in 1) -- ++(-1, 0) node [left] (S) {S};
+
+
+\end{circuitikz}
+\end{document}

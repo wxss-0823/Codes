@@ -1,0 +1,14 @@
+set_power_control_enable 0
+carr_inactivate 0
+carr_inactivate 1
+carr_inactivate 2
+carr_inactivate 3
+carr_cfg 4 0 3 10 0 2160 1970 47.8
+carr_cfg 1 0 3 10 0 2160 1970 47.8
+carr_cfg 2 0 3 10 0 2160 1970 47.8
+carr_cfg 3 0 3 10 0 2160 1970 47.8
+carr_activate 0
+carr_activate 1
+carr_activate 2
+carr_activate 3
+set_power_control_enable 1

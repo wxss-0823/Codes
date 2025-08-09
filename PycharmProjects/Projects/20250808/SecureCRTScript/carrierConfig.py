@@ -8,13 +8,13 @@
 
 def checkReturn(echo: str, wait_time: int, error_handle: list) -> bool:
 	if not crt.Screen.WaitForStrings(echo, wait_time):
-		if error_handle == "Stuck Dead"
+		if error_handle == "Stuck Dead":
 			crt.Session.Disconnect
 		crt.Screen.Send("Error" + "\r")
 		for cmd in error_handle:
 			crt.Screen.Send(cmd + "\r")
 			crt.Sleep(100)
-			checkReturn("OK", 15, "Stuck Dead"):
+			checkReturn("OK", 15, "Stuck Dead")
 		return False
 	return True
 	
@@ -32,7 +32,7 @@ def main() -> None:
 	
 	wait_time = 15
 	
-	dir = "D:\\Users\\ProjectFiles\\Codes\\PycharmProjects\\Projects\\20250808\\SecureCRTScript\\N28CarrierConfig.txt"
+	dir = r"D:\Users\ProjectFiles\Codes\PycharmProjects\Projects\20250808\SecureCRTScript\N28CarrierConfig.txt"
 	
 	while 1:
 		for line in open(dir, "r"):

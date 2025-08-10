@@ -6,11 +6,11 @@ print(type(a))
 
 
 class A:
-    pass
+  pass
 
 
 class B(A):
-    pass
+  pass
 
 
 # type 不认为子类是父类类型

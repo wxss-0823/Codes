@@ -13,20 +13,20 @@ print(repr("wxss\n2024"))
 
 # repr 输出表
 for i in range(1, 11):
-    # rjust 方法，字符靠右，左边填充空格
-    print(repr(i).rjust(2), repr(i * i).rjust(3), end=" ")
-    print(repr(i * i * i).rjust(4))
+  # rjust 方法，字符靠右，左边填充空格
+  print(repr(i).rjust(2), repr(i * i).rjust(3), end=" ")
+  print(repr(i * i * i).rjust(4))
 
 # str.format() 输出表
 for i in range(1, 11):
-    print("{0:2d} {1:3d} {2:4d}".format(i, i * i, i * i * i))
+  print("{0:2d} {1:3d} {2:4d}".format(i, i * i, i * i * i))
 
 # pickle 实例
 output = open("6.data.txt", "wb")
 data = {
-    "a": [1, 2.0, 3, 4+6j],
-    "b": ('string', u'Unicode string'),
-    "c": None
+  "a": [1, 2.0, 3, 4+6j],
+  "b": ('string', u'Unicode string'),
+  "c": None
 }
 
 self_ref_list = [1, 2, 3]

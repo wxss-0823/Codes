@@ -51,7 +51,7 @@ codesg segment
               add  bx, 2
               loop s2
 
-              add  bx, 128
+              add  bx, 12
               mov  cx, si
               loop s1
 

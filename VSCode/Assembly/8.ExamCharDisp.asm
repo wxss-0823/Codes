@@ -41,7 +41,8 @@ codesg segment
 
               mov  ax, 0B800H
               mov  ds, ax
-              mov  bx, 05D8H
+       ; mov  bx, 05D8H
+              mov  bx, 0
               mov  cx, 3
 
        s1:    mov  si, cx
@@ -51,7 +52,7 @@ codesg segment
               add  bx, 2
               loop s2
 
-              add  bx, 12
+              add  bx, 128
               mov  cx, si
               loop s1
 

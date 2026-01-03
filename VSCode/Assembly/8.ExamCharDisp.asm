@@ -8,7 +8,7 @@ datasg segment
 datasg ends
 
 stacksg segment
-               dw 48 dup (0)
+               dw 50 dup (0)
 stacksg ends
 
 codesg segment
@@ -16,7 +16,7 @@ codesg segment
               mov  ds, ax
               mov  ax, stacksg
               mov  ss, ax
-              mov  sp, 96
+              mov  sp, 100
 
               mov  bx, 0
               mov  cx, 3

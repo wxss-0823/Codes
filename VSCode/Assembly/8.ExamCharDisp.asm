@@ -41,8 +41,8 @@ codesg segment
 
               mov  ax, 0B800H
               mov  ds, ax
-       ; mov  bx, 05D8H
-              mov  bx, 0
+              mov  bx, 05D8H
+       ; mov  bx, 0
               mov  cx, 3
 
        s1:    mov  si, cx

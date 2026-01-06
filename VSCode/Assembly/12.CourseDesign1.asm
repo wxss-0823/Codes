@@ -13,11 +13,15 @@ data segment
 data ends
 
 table segment
-        db 21 dup ('xxxx xxxx xx xx ')
+        db 21 dup ('xxxx     xxxxxxx   xxxxx    xxx ')  ; 21*32byte
 table ends
 
+buff segment
+       db 16 dup(0)
+buff ends
+
 code segment
-  start:mov  ax, data        ; 段地址定位
+  start:mov  ax, data       ; 段地址定位
         mov  ds, ax
         mov  ax, table
         mov  es, ax
@@ -28,44 +32,25 @@ code segment
         mov  bx, 0
         mov  cx, 21
         
-  s:    push cx              ; 计算当前行数对应的内存 offset
+  main: push cx             ; 计算当前行数对应的内存 offset
         mov  ax, 21
         sub  ax, cx
         mov  cx, ax
-        mov  ax, 16
+        mov  ax, 32
         mul  cl
-        mov  bx, ax          ; 计算结果存入 bx
+        mov  bx, ax         ; 计算结果存入 bx
 
-        mov  ax, ds:[si]
+        mov  ax, ds:[si]    ; 每一个年份 4byte 存入 table
         mov  es:[bx], ax
         add  si, 2
         mov  ax, ds:[si]
         mov  es:[bx+2], ax
         add  si, 2
 
-        mov  ax, ds:[di]
-        push ax              ; L16
-        mov  es:[bx+5], ax
-        add  di, 2
-        mov  ax, ds:[di]
-        push ax              ; H16
-        mov  es:[bx+7], ax
-        add  di, 2
+        mov  ax, ds:[di]    ; 每一个收入 7byte 存入 table
+        mov  dx, ds:[di+2]
+        call dtoc
 
-        mov  ax, ds:[bp]
-        mov  es:[bx+10], ax
-        add  bp, 2
 
-        mov  cx, ax
-        pop  dx
-        pop  ax
-        div  cx
-        mov  es:[bx+13], ax
-
-        pop  cx
-        loop s
-
-        mov  ax, 4c00H
-        int  21H
 code ends
 end start

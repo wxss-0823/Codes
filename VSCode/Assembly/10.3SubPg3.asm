@@ -38,5 +38,6 @@ code segment
             pop  si
             pop  ds
             pop  ax
+            ret
 code ends
 end start

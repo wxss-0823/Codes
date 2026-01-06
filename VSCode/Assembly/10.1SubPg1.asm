@@ -35,6 +35,7 @@ code segment
            mov  ah, 0
            mul  dl
            add  bx, ax         ; 计算结果：显存不允许从奇数地址存入数据
+           mov  si, 0
 
   disp:    push ds             ; 字符串 ds 段地址保存
            push ds:[si]        ; push 两个字节的字符入栈
@@ -48,8 +49,8 @@ code segment
            mov  ds:[bx].2, ah  ; 第二个字符放入显存
            mov  ds:[bx].3, cl  ; 颜色配置放入显存
 
-           inc  si
-           add  bx, 2
+           add  si, 2
+           add  bx, 4
            pop  ds             ; 取出字符串 ds 段地址
 
            push cx

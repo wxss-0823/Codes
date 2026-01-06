@@ -32,8 +32,8 @@ code segment
 
             mov  ax, [bp+4]
             div  cx
-            mov  [bp], ax    ; 写回 L16
-            mov  [bp+4], cx  ; 写回 rem
+            mov  [bp+4], ax  ; 写回 L16
+            mov  [bp], dx    ; 写回 rem
   divdw_out:pop  cx
             pop  dx
             pop  ax

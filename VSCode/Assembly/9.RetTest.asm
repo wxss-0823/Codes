@@ -102,40 +102,40 @@
 ; 子程序：用 stack 保存使用到的 reg
 assume cs:code
 data segment
-       db 'word', 0
-       db 'unix', 0
-       db 'wind', 0
-       db 'good', 0
+             DB 'word', 0
+             DB 'unix', 0
+             DB 'wind', 0
+             DB 'good', 0
 data ends
 
 code segment
-  start:  mov  ax, data
-          mov  ds, ax
-          mov  bx, 0
+        start:   MOV  AX, data
+                 MOV  DS, AX
+                 MOV  BX, 0
 
-          mov  cx, 4
-  s:      mov  si, bx
-          call capital
-          add  bx, 5
-          loop s
+                 MOV  CX, 4
+        s:       MOV  SI, BX
+                 CALL capital
+                 ADD  BX, 5
+                 LOOP s
 
-          mov  ax, 4c00H
-          int  21H
+                 MOV  AX, 4c00H
+                 INT  21H
 
-  capital:push cx
-          push si
-               
-  change: mov  cl, [si]
-          mov  ch, 0
-          jcxz ok
+        capital: PUSH CX
+                 PUSH SI
 
-          and  byte ptr [si], 11011111b
-          inc  si
-          jmp  short change
+        change:  MOV  CL, [SI]
+                 MOV  CH, 0
+                 JCXZ ok
 
-  ok:     pop  si
-          pop  cx
-          ret
+                 AND  byte PTR [SI], 11011111b
+                 INC  SI
+                 JMP  SHORT change
+
+        ok:      POP  SI
+                 POP  CX
+                 RET
 code ends
 end start
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

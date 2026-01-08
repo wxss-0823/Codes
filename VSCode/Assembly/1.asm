@@ -1,11 +1,11 @@
 assume cs:codescg
 
 codescg segment
-          mov ax, 0123h
-          mov bx, 0456h
-          add ax, ax
-          mov ax, 4c00h
-          int 21h
+          MOV AX, 0123h
+          MOV BX, 0456h
+          ADD AX, AX
+          MOV AX, 4c00h
+          INT 21h
 
 codescg ends
 

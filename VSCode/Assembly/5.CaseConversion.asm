@@ -1,29 +1,29 @@
 assume cs:codesg, ds:datasg
 datasg segment
-         db 'BaSiC'
-         db 'iNfOrMaTiOn'
+              DB 'BaSiC'
+              DB 'iNfOrMaTiOn'
 datasg ends
 codesg segment
-  start: mov  ax, datasg
-         mov  ds, ax
+       start: MOV  AX, datasg
+              MOV  DS, AX
 
-         mov  bx, 0
-         mov  cx, 5
-  s:     mov  al, [bx]
-         and  al, 11011111B
-         mov  [bx], al
-         inc  bx
-         loop s
-          
-         mov  bx, 5
-         mov  cx, 11
-  s0:    mov  al, [bx]
-         or   al, 00100000B
-         mov  [bx], al
-         inc  bx
-         loop s0
+              MOV  BX, 0
+              MOV  CX, 5
+       s:     MOV  AL, [BX]
+              AND  AL, 11011111B
+              MOV  [BX], AL
+              INC  BX
+              LOOP s
 
-         mov  ax, 4c00h
-         int  21h
+              MOV  BX, 5
+              MOV  CX, 11
+       s0:    MOV  AL, [BX]
+              OR   AL, 00100000B
+              MOV  [BX], AL
+              INC  BX
+              LOOP s0
+
+              MOV  AX, 4c00h
+              INT  21h
 codesg ends
 end start

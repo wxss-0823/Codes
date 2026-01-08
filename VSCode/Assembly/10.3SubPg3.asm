@@ -1,43 +1,43 @@
 assume cs:code
 data segment
-       db 10 dup (0)
+            DB 10 DUP (0)
 data ends
 
 code segment
-  start:    mov  ax, 12666
-            mov  bx, data
-            mov  ds, bx
-            mov  si, 0
+       start:     MOV  AX, 12666
+                  MOV  BX, data
+                  MOV  DS, BX
+                  MOV  SI, 0
 
-            call dtoc
+                  CALL dtoc
 
-            mov  ax, 4c00H
-            int  21H
+                  MOV  AX, 4c00H
+                  INT  21H
 
-  ;功能：将 word 型数据转变为表示十进制数的字符串，字符串以 0 为结尾符
-  ;参数：(ax)=word 型数据，ds:si 指向字符串首地址
-  ;返回：无
-  dtoc:     push ax
-            push ds
-            push si
-            push dx
-            push cx
+       ;功能：将 word 型数据转变为表示十进制数的字符串，字符串以 0 为结尾符
+       ;参数：(ax)=word 型数据，ds:si 指向字符串首地址
+       ;返回：无
+       dtoc:      PUSH AX
+                  PUSH DS
+                  PUSH SI
+                  PUSH DX
+                  PUSH CX
 
-  dtoc_core:mov  cx, 10
-            mov  dx, 0
-            div  cx
-            add  dx, 30H
-            mov  ds:[si], dl
-            inc  si
-            mov  cx, ax
-            jcxz dtoc_out
-            jmp  short dtoc_core
+       dtoc_core: MOV  CX, 10
+                  MOV  DX, 0
+                  DIV  CX
+                  ADD  DX, 30H
+                  MOV  DS:[SI], DL
+                  INC  SI
+                  MOV  CX, AX
+                  JCXZ dtoc_out
+                  JMP  SHORT dtoc_core
 
-  dtoc_out: pop  cx
-            pop  dx
-            pop  si
-            pop  ds
-            pop  ax
-            ret
+       dtoc_out:  POP  CX
+                  POP  DX
+                  POP  SI
+                  POP  DS
+                  POP  AX
+                  RET
 code ends
 end start

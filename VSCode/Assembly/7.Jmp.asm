@@ -1,26 +1,26 @@
 assume cs:codesg
 codesg segment
 
-         mov ax, 4c00H
-         int 21H
+              MOV AX, 4c00H
+              INT 21H
 
-  start: mov ax, 0
-  s:     nop
-         nop
+       start: MOV AX, 0
+       s:     NOP
+              NOP
 
-         mov di, offset s
-         mov si, offset s2  ; 在复制标号 S2 的指令至 S 处时，由于相对位移的关系，将不是跳转至 S1，而是跳转至程序开始 CS:[0]
-         mov ax, cs:[si]
-         mov cs:[di], ax
+              MOV DI, OFFSET s
+              MOV SI, OFFSET s2       ; 在复制标号 S2 的指令至 S 处时，由于相对位移的关系，将不是跳转至 S1，而是跳转至程序开始 CS:[0]
+              MOV AX, CS:[SI]
+              MOV CS:[DI], AX
 
-  s0:    jmp short s
+       s0:    JMP SHORT s
 
-  s1:    mov ax, 0
-         int 21H
-         mov ax, 0
+       s1:    MOV AX, 0
+              INT 21H
+              MOV AX, 0
 
-  s2:    jmp short s1
-         nop
+       s2:    JMP SHORT s1
+              NOP
 
 codesg ends
 end start

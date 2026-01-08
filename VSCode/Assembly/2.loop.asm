@@ -1,17 +1,17 @@
 assume cs:code
 
 code segment
-       mov  ax, 0020h
-       mov  ds, ax
-       mov  bx, 0
-       mov  cx, 64
+          MOV  AX, 0020h
+          MOV  DS, AX
+          MOV  BX, 0
+          MOV  CX, 64
 
-  s:   mov  ds:[bx], bx
-       inc  bx
-       loop s
+     s:   MOV  DS:[BX], BX
+          INC  BX
+          LOOP s
 
-       mov  ax, 4c00h
-       int  21h
+          MOV  AX, 4c00h
+          INT  21h
 
 code ends
 

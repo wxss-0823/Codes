@@ -1,9 +1,9 @@
 assume cs:code
-data segment
+data SEGMENT
             DB 10 DUP (0)
-data ends
+data ENDS
 
-code segment
+code SEGMENT
        start:     MOV  AX, 12666
                   MOV  BX, data
                   MOV  DS, BX
@@ -39,5 +39,5 @@ code segment
                   POP  DS
                   POP  AX
                   RET
-code ends
+code ENDS
 end start

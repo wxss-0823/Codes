@@ -1,9 +1,9 @@
 assume cs:code
-data segment
+data SEGMENT
        DB 'conversation', 0
-data ends
+data ENDS
 
-code segment
+code SEGMENT
   start:      MOV  AX, CS
               MOV  DS, AX
               MOV  SI, OFFSET capital
@@ -16,8 +16,8 @@ code segment
 
               MOV  AX, 0
               MOV  ES, AX
-              MOV  word PTR ES:[7cH*4], 200H
-              MOV  word PTR ES:[7cH*4+2], 0
+              MOV  WORD PTR ES:[7cH*4], 200H
+              MOV  WORD PTR ES:[7cH*4+2], 0
 
   main:       MOV  AX, data
               MOV  DS, AX
@@ -32,7 +32,7 @@ code segment
   change:     MOV  CL, [SI]
               MOV  CH, 0
               JCXZ ok
-              AND  byte PTR [SI], 11011111B
+              AND  BYTE PTR [SI], 11011111B
               INC  SI
               JMP  SHORT change
   ok:         POP  SI
@@ -41,5 +41,5 @@ code segment
 
   capitalend: NOP
 
-code ends
+code ENDS
 end start

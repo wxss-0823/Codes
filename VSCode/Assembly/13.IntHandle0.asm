@@ -1,5 +1,5 @@
 assume cs:code
-code segment
+code SEGMENT
        start: MOV  AX, CS
               MOV  DS, AX
               MOV  SI, OFFSET sqr
@@ -12,8 +12,8 @@ code segment
 
               MOV  AX, 0
               MOV  ES, AX
-              MOV  word PTR ES:[7ch*4], 200H
-              MOV  word PTR ES:[7ch*4+2], 0
+              MOV  WORD PTR ES:[7ch*4], 200H
+              MOV  WORD PTR ES:[7ch*4+2], 0
 
               MOV  AX, 3456
               INT  7cH
@@ -26,5 +26,5 @@ code segment
               IRET
        sqrend:NOP
 
-code ends
+code ENDS
 end start

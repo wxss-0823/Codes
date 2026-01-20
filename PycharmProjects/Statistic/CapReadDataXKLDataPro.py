@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 
 N = 100  # 100个测试点
-destDir = r"D:\Users\Wxss\00工作\0_实习期\1_实践\0_电容项目\1_电容测试数据\自测数据\GL IQC\20250813 08190010-001 CMUN-500BC12-UA4-F"
+destDir = r"D:\Users\Wxss\bin\WeLink\DownloadFiles\数据汇总\数据汇总\08190006-001 CMUN_1500CC9_AC4__UC4_F"
 figureDir = r"C:\Users\w00025121\Desktop\11"
 
 plt.close('all')
@@ -46,8 +46,10 @@ for rootDir, subDir, files in os.walk(destDir):
       dfCap.columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G'] # 统一列名称
       dfCap["excel_name"] = file.replace(".xlsx", "")
       # df_cap = df_cap.drop(0) # 删除首行
-      lastIndices = dfCap.index[-564:]
-      dfCap = dfCap.drop(lastIndices) # 删除最后564行
+      revRowLen = int(-len(dfCap['A']) / 2)
+      # lastIndices = dfCap.index[-564:]
+      lastIndices = dfCap.index[revRowLen:]
+      dfCap = dfCap.drop(lastIndices) # 删除最后反转的行
       dfCapAll = pd.concat([dfCapAll, dfCap])
 
 capId = dfCapAll[dfCapAll['A'] < 99].index
@@ -101,9 +103,9 @@ plt.savefig(os.path.join(figureDir, "cap_dev CW&CCW"))
 
 ####################################################################################################
 # 容值采集数据分析, 画 CWCCW 差值
-All_CWCCW_AV_DEV = []
-All_CWCCW_MAX_DEV = []
-All_CAP_MAX_DEV = []
+allCWCCWAveDev = []
+allCWCCWMaxDev = []
+allCapMaxDev = []
 
 plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.title('CW-CCW')
@@ -118,24 +120,24 @@ for i in range(capAllLen): # 每一个测试文件，数据长度不一样，无
       h = h + 1
   else:
     plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i])
-    All_CWCCW_AV_DEV.append(dfCapAll['CWCCW'][(i - h):i].mean()) # 统计 CW CCW 差值平均相对偏差
-    All_CWCCW_MAX_DEV.append(dfCapAll['CWCCW'][(i - h):i].max()) # 统计 CW CCW 差值最大相对偏差
+    allCWCCWAveDev.append(dfCapAll['CWCCW'][(i - h):i].mean()) # 统计 CW CCW 差值平均相对偏差
+    allCWCCWMaxDev.append(dfCapAll['CWCCW'][(i - h):i].max()) # 统计 CW CCW 差值最大相对偏差
 
     CW_max = abs(dfCapAll['CW'][(i - h):i].max())
     CCW_max = abs(dfCapAll['CCW'][(i - h):i].max())
-    All_CAP_MAX_DEV.append(max(CW_max, CCW_max))
+    allCapMaxDev.append(max(CW_max, CCW_max))
 
     a = 0
     k = 0
     h = -1
   if i == capAllLen:
     plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i])
-    All_CWCCW_AV_DEV.append(dfCapAll['CWCCW'][(i - h):i].mean())
-    All_CWCCW_MAX_DEV.append(dfCapAll['CWCCW'][(i - h):i].max())
+    allCWCCWAveDev.append(dfCapAll['CWCCW'][(i - h):i].mean())
+    allCWCCWMaxDev.append(dfCapAll['CWCCW'][(i - h):i].max())
 
     CW_max = abs(dfCapAll['CW'][(i - h):i].max())
     CCW_max = abs(dfCapAll['CCW'][(i - h):i].max())
-    All_CAP_MAX_DEV.append(max(CW_max, CCW_max))
+    allCapMaxDev.append(max(CW_max, CCW_max))
 
 # 画上下限
 plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
@@ -145,16 +147,28 @@ plt.savefig(os.path.join(figureDir, "CW-CCW"))
 # 大于 100 pF 时，CW CCW 统计平均偏差
 plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.title('All_CWCCW_AV_DEV')
-plt.scatter(range(len(All_CWCCW_AV_DEV)), All_CWCCW_AV_DEV)
-plt.plot(range(len(All_CWCCW_AV_DEV)), np.ones(len(All_CWCCW_AV_DEV)) * 0.003, 'r', label='CW-CCW limit')
+plt.scatter(range(len(allCWCCWAveDev)), allCWCCWAveDev)
+plt.plot(range(len(allCWCCWAveDev)), np.ones(len(allCWCCWAveDev)) * 0.003, 'r', label='CW-CCW limit')
 plt.legend(loc='best')
 plt.savefig(os.path.join(figureDir, "All_CWCCW_AV_DEV"))
 
 # 大于 100 pF 时，CW 和 CCW 统计最大偏差
 plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.title('All_CAP_MAX_DEV')
-plt.scatter(range(len(All_CAP_MAX_DEV)), All_CAP_MAX_DEV)
-plt.plot(range(len(All_CAP_MAX_DEV)), np.ones(len(All_CAP_MAX_DEV)) * 0.01, 'r', label='CW and CCW limit')
+plt.scatter(range(len(allCapMaxDev)), allCapMaxDev)
+plt.plot(range(len(allCapMaxDev)), np.ones(len(allCapMaxDev)) * 0.01, 'r', label='CW and CCW limit')
 plt.legend(loc='best')
 plt.savefig(os.path.join(figureDir, "All_CAP_MAX_DEV"))
 ####################################################################################################
+
+# 统计最大偏差超 1% 的电容个数
+failedCapNum = 0
+failedCapNum1 = 0
+for i in range(len(allCapMaxDev)):
+  if allCapMaxDev[i] > 0.01:
+    failedCapNum += 1
+  if allCapMaxDev[i] > 0.015:
+    failedCapNum1 += 1
+
+print(f"The num of max capacity deviation exceeding 1.0%: {failedCapNum} in {len(allCapMaxDev)+1} samples")
+print(f"The num of max capacity deviation exceeding 1.5%: {failedCapNum1} in {len(allCapMaxDev)+1} samples")

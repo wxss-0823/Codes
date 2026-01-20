@@ -6,11 +6,11 @@
 # @File    : CalcTuningF.py
 
 
-import numpy as np
-import matplotlib.pyplot as plt
 import os
-import pandas as pd
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 N = 100  # 100个测试点
 dataDir = r'D:\Users\Wxss\00工作\0_实习期\1_实践\0_电容项目\1_电容测试数据\来料数据\2026-1-8马达发货初始数据\08190049-001容值精度C曲线1.6'
@@ -98,9 +98,9 @@ dfs.loc[:, 'CW5K(pF)'] = dfs['CW5K(pF)'] - dfs['Full-step']
 dfs.loc[:, 'CCW5K(pF)'] = dfs['CCW5K(pF)'] - dfs['Full-step']
 
 # Calc: 容值测量绝对误差
-dfCapAll.loc[:, 'B'] = dfCapAll['B'] - dfCapAll['A'] # CW 测试值与理论值偏差
-dfCapAll.loc[:, 'C'] = dfCapAll['C'] - dfCapAll['A'] # CCW 测试值与理论值偏差
-dfCapAll.loc[:, 'CWCCW(pF)'] = dfCapAll['B'] - dfCapAll['C'] # CW-CCW 的偏差，正反转容值的绝对偏差
+dfCapAll.loc[:, 'B'] = dfCapAll['B'] - dfCapAll['A']  # CW 测试值与理论值偏差
+dfCapAll.loc[:, 'C'] = dfCapAll['C'] - dfCapAll['A']  # CCW 测试值与理论值偏差
+dfCapAll.loc[:, 'CWCCW(pF)'] = dfCapAll['B'] - dfCapAll['C']  # CW-CCW 的偏差，正反转容值的绝对偏差
 
 # Calc: 容值测量相对偏差，CW 相对误差；CCW 相对误差；CW-CCW 相对误差
 dfCapAll.loc[:, 'CWCCW'] = abs(dfCapAll['CWCCW(pF)'] / dfCapAll['A'])  # CCW-CW 的相对百分比偏差
@@ -122,19 +122,19 @@ dev5 = pd.DataFrame(index=range(rowNum), columns=range(2))
 g = 1
 for k in range(rowNum):
   dev5.iloc[k, 0] = max(dfs.iloc[k, 1], dfs.iloc[k, 3], dfs.iloc[k, 5], dfs.iloc[k, 7], dfs.iloc[k, 9]) - min(
-    dfs.iloc[k, 1], dfs.iloc[k, 3], dfs.iloc[k, 5], dfs.iloc[k, 7], dfs.iloc[k, 9]) # CW 5次测试值中最大值 - 最下值
+    dfs.iloc[k, 1], dfs.iloc[k, 3], dfs.iloc[k, 5], dfs.iloc[k, 7], dfs.iloc[k, 9])  # CW 5次测试值中最大值 - 最下值
   dev5.iloc[k, 1] = max(dfs.iloc[k, 2], dfs.iloc[k, 4], dfs.iloc[k, 6], dfs.iloc[k, 8], dfs.iloc[k, 10]) - min(
-    dfs.iloc[k, 2], dfs.iloc[k, 4], dfs.iloc[k, 6], dfs.iloc[k, 8], dfs.iloc[k, 10]) # CCW 5次测试值中最大值 - 最下值
+    dfs.iloc[k, 2], dfs.iloc[k, 4], dfs.iloc[k, 6], dfs.iloc[k, 8], dfs.iloc[k, 10])  # CCW 5次测试值中最大值 - 最下值
   if k % 99 == 0 and k != 0:
-    devAvgCWCCW = dev5.loc[(g - 1) * N:(g * N - 1), [0, 1]].mean() # 单个样品，CW 平均最大偏差和 CCW 平均最大偏差
+    devAvgCWCCW = dev5.loc[(g - 1) * N:(g * N - 1), [0, 1]].mean()  # 单个样品，CW 平均最大偏差和 CCW 平均最大偏差
     devAvgMax = max(devAvgCWCCW[0], devAvgCWCCW[1])
     g = g + 1
-    ALL_5TIMES_AV_DEV.append(devAvgMax) # 所有样品平均最大偏差统计数据存在 ALL_5TIMES_AV_DEV
+    ALL_5TIMES_AV_DEV.append(devAvgMax)  # 所有样品平均最大偏差统计数据存在 ALL_5TIMES_AV_DEV
 
 # 5 次平均一致性 统计数据画图
 CWRowNum = dfStep['CW(pF)'].size
 all5TimeLen = len(ALL_5TIMES_AV_DEV)
-twoStepValue = dfStep.loc[(round(1 / 4 * CWRowNum)):(round(3 / 4 * CWRowNum)), 'CW(pF)'].mean() # 最后一个样品，步进数据 1/4 - 3/4 线性区域的平均值
+twoStepValue = dfStep.loc[(round(1 / 4 * CWRowNum)):(round(3 / 4 * CWRowNum)), 'CW(pF)'].mean()  # 最后一个样品，步进数据 1/4 - 3/4 线性区域的平均值
 plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.title('ALL_5TIMES_AV_DEV')
 plt.scatter(range(all5TimeLen), ALL_5TIMES_AV_DEV)
@@ -156,8 +156,8 @@ for k in range(0, N):
 # Plot: 画每一个电容 5 次重复测试的图像
 for i in range(round(dfs['Full-step'].size / df['Full-step'].size)):
   plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-  plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW1(pF)'][(N * i):(N * i + N)], label=dfs.iloc[(N * i), 13]) # label = file name
-  plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW2(pF)'][(N * i):(N * i + N)], label=ALL_5TIMES_AV_DEV[i]) # 5 times avg cap
+  plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW1(pF)'][(N * i):(N * i + N)], label=dfs.iloc[(N * i), 13])  # label = file name
+  plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW2(pF)'][(N * i):(N * i + N)], label=ALL_5TIMES_AV_DEV[i])  # 5 times avg cap
   plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW3(pF)'][(N * i):(N * i + N)])
   plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW4(pF)'][(N * i):(N * i + N)])
   plt.plot(dfs['Full-step'][(N * i):(N * i + N)], dfs['CW5(pF)'][(N * i):(N * i + N)])
@@ -191,18 +191,18 @@ plt.title('cap_dev CW&CCW')
 # 用于获取当前理想容值
 CapRT = 0
 k = 0
-for i in range(capAllLen): # 每一个测试文件，数据长度不一样，无法使用定长数据读数
+for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
   if dfCapAll.iloc[i, 0] > CapRT:
     CapRT = dfCapAll.iloc[i, 0]
     k = k + 1
   else:
-    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['B'][(i - k):i]) # CW
-    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i]) # CCW
+    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['B'][(i - k):i])  # CW
+    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CCW
     CapRT = 0
     k = 0
-  if i == capAllLen:
-    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['B'][(i - k):i]) # CW
-    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i]) # CCW
+  if i == capAllLen - 1:
+    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['B'][(i - k):i])  # CW
+    plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CCW
 # 画上下限
 plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
 plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
@@ -219,7 +219,7 @@ plt.title('CW-CCW')
 CapRT = 0
 k = 0
 h = -1
-for i in range(capAllLen): # 每一个测试文件，数据长度不一样，无法使用定长数据读数
+for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
   if dfCapAll.iloc[i, 0] > CapRT:
     CapRT = dfCapAll.iloc[i, 0]
     k = k + 1
@@ -227,17 +227,17 @@ for i in range(capAllLen): # 每一个测试文件，数据长度不一样，无
       h = h + 1
   else:
     plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['CWCCW(pF)'][(i - k):i])
-    All_CWCCW_AV_DEV.append(dfCapAll['CWCCW'][(i - h):i].mean()) # 统计 CW 与 CCW 差值的平均相对偏差
-    All_CWCCW_MAX_DEV.append(dfCapAll['CWCCW'][(i - h):i].max()) # 统计 CW 与 CCW 差值的最大相对偏差
+    All_CWCCW_AV_DEV.append(dfCapAll['CWCCW'][(i - h):i].mean())  # 统计 CW 与 CCW 差值的平均相对偏差
+    All_CWCCW_MAX_DEV.append(dfCapAll['CWCCW'][(i - h):i].max())  # 统计 CW 与 CCW 差值的最大相对偏差
 
-    CW_max = abs(dfCapAll['CW'][(i - h):i].max()) # 统计 CW 的最大相对偏差
-    CCW_max = abs(dfCapAll['CCW'][(i - h):i].max()) # 统计 CCW 的最大相对偏差
-    All_CAP_MAX_DEV.append(max(CW_max, CCW_max)) # 记录 CW 和 CCW 中最大的相对偏差
+    CW_max = abs(dfCapAll['CW'][(i - h):i].max())  # 统计 CW 的最大相对偏差
+    CCW_max = abs(dfCapAll['CCW'][(i - h):i].max())  # 统计 CCW 的最大相对偏差
+    All_CAP_MAX_DEV.append(max(CW_max, CCW_max))  # 记录 CW 和 CCW 中最大的相对偏差
 
     CapRT = 0
     k = 0
     h = -1
-  if i == capAllLen:
+  if i == capAllLen - 1:
     plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['CWCCW(pF)'][(i - k):i])
     All_CWCCW_AV_DEV.append(dfCapAll['CWCCW'][(i - h):i].mean())
     All_CWCCW_MAX_DEV.append(dfCapAll['CWCCW'][(i - h):i].max())
@@ -287,25 +287,25 @@ k = 0
 plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.title('Step_Dev CW&CCW')
 # Plot: 容值步进变化量
-for i in range(dfStepAllLen): # 每一个测试文件，数据长度不一样，无法使用定长数据读数
+for i in range(dfStepAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
   if dfStepAll.iloc[i, 0] > CapRT:
     CapRT = dfStepAll.iloc[i, 0]
     k = k + 1
   else:
-    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CW(pF)'][(i - k):i]) # CW
-    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CCW(pF)'][(i - k):i]) # CCW
-    All_CW_STEP_AVG.append(dfStepAll['CW(pF)'][(i- k):i].mean()) # 统计时去掉前10个点
+    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CW(pF)'][(i - k):i])  # CW
+    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CCW(pF)'][(i - k):i])  # CCW
+    All_CW_STEP_AVG.append(dfStepAll['CW(pF)'][(i - k):i].mean())  # 统计时去掉前10个点
     All_CCW_STEP_AVG.append(dfStepAll['CCW(pF)'][(i - k):i].mean())
-    All_CW_STEP_STD.append(dfStepAll['CW(pF)'][(i - k):i].std()) # 统计时去掉前10个点
+    All_CW_STEP_STD.append(dfStepAll['CW(pF)'][(i - k):i].std())  # 统计时去掉前10个点
     All_CCW_STEP_STD.append(dfStepAll['CCW(pF)'][(i - k):i].std())
     CapRT = 0
     k = 0
-  if i == dfStepAllLen:
-    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CW(pF)'][(i - k):i]) # CW
-    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CCW(pF)'][(i - k):i]) # CCW
+  if i == dfStepAllLen - 1:
+    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CW(pF)'][(i - k):i])  # CW
+    plt.plot(dfStepAll['A'][(i - k):i], dfStepAll['CCW(pF)'][(i - k):i])  # CCW
     All_CW_STEP_AVG.append(dfStepAll['CW(pF)'][(i - k):i].mean())
     All_CCW_STEP_AVG.append(dfStepAll['CCW(pF)'][(i - k):i].mean())
-    All_CW_STEP_STD.append(dfStepAll['CW(pF)'][(i - k):i].std()) # 统计时去掉前10个点
+    All_CW_STEP_STD.append(dfStepAll['CW(pF)'][(i - k):i].std())  # 统计时去掉前10个点
     All_CCW_STEP_STD.append(dfStepAll['CCW(pF)'][(i - k):i].std())
 
 # CW 和 CCW  步进统计，均值与标准差

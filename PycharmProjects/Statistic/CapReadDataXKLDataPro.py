@@ -7,7 +7,6 @@
 
 
 import os
-import string
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,17 +14,13 @@ import pandas as pd
 
 
 def capRead(
-    destDir: string,  # 原始数据地址，要求：子文件夹为分型号的电容数据
-    figureDir: string  # 图像存放地址，要求：必须存在该路径
+    destDir: str,  # 原始数据地址，要求：子文件夹为分型号的电容数据
+    figureDir: str  # 图像存放地址，要求：必须存在该路径
 ) -> None:
   N = 100  # 100个测试点
-  # destDir = r"D:\Users\Wxss\bin\WeLink\DownloadFiles\数据汇总\数据汇总\08190006-001 CMUN_1500CC9_AC4__UC4_F"
-  # figureDir = r"C:\Users\w00025121\Desktop\11"
-
   plt.close('all')
   dfs = pd.DataFrame()  # 5次容值采集
   dfCapAll = pd.DataFrame()  # 容值精度
-  dfStepAll = pd.DataFrame()  # 步进
   dfCap = pd.DataFrame()
 
   for rootDir, subDir, files in os.walk(destDir):
@@ -97,7 +92,7 @@ def capRead(
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
       a = 0
       k = 0
-    if i == capAllLen:
+    if i == capAllLen - 1:
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CW
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
 
@@ -136,7 +131,7 @@ def capRead(
       a = 0
       k = 0
       h = -1
-    if i == capAllLen:
+    if i == capAllLen - 1:
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i])
       allCWCCWAveDev.append(dfCapAll['CWCCW'][(i - h):i].mean())
       allCWCCWMaxDev.append(dfCapAll['CWCCW'][(i - h):i].max())

@@ -84,7 +84,7 @@ for pdfFileBatch in pdfFilesDir:
           'Diff of CW and CCW': re.search(r"\d+.\d+", pdfTables[6][0][1]).group(0)    # Diff of CW and CCW: (7, 1, 2)
         }
 
-        xlsxDF = xlsxDF._append(lineData, ignore_index=True)
+        xlsxDF = xlsxDF.append(lineData, ignore_index=True)
       except IndexError as e:
         print(f"Missing SNO & Type: {e}\n")
         with open("Failed Data List.txt", 'a', encoding="utf-8") as f:

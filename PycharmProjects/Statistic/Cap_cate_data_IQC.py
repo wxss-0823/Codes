@@ -14,8 +14,8 @@ capList: List[str] = []
 
 # main
 capPattern = r"\d+pF"
-for currentDir, subdirs, files in os.walk(cateDataDir):
-  for subdir in subdirs:
+for currentDir, subDirs, files in os.walk(cateDataDir):
+  for subdir in subDirs:
     # print(subdir)
     try:
       capValue = re.search(capPattern, subdir).group(0)

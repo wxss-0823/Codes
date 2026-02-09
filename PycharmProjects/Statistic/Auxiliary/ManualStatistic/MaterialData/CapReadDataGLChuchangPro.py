@@ -13,7 +13,9 @@ import numpy as np
 import pandas as pd
 
 N = 100  # 100个测试点
-dataDir = r'D:\Users\Wxss\00工作\0_实习期\1_实践\0_电容项目\1_电容测试数据\来料数据\2026-1-8马达发货初始数据\08190049-001容值精度C曲线1.6'
+dataDir = r'D:\Users\Wxss\00工作\0_实习期\1_实践\0_电容项目\1_电容测试数据\来料数据\O-马达电容器08190001-002近期出货COA初步资料1.22\容值精度测试数据'
+figDir = r'C:\Users\w00025121\Desktop\figure'
+os.makedirs(figDir, exist_ok=True)
 
 plt.close('all')
 dfs = pd.DataFrame()  # 5次容值采集
@@ -140,6 +142,7 @@ plt.title('ALL_5TIMES_AV_DEV')
 plt.scatter(range(all5TimeLen), ALL_5TIMES_AV_DEV)
 plt.plot(range(all5TimeLen), np.ones(all5TimeLen) * twoStepValue, 'r', label='two steps limit')
 plt.legend(loc="best")
+plt.savefig(os.path.join(figDir, "ALL_5TIMES_AV_DEV"))
 plt.show()
 
 # 定义上下限：小于 100 pF，1；大于 100 pF，1 + 0.01*C
@@ -206,6 +209,7 @@ for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，�
 # 画上下限
 plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
 plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
+plt.savefig(os.path.join(figDir, "cap_dev CW&CCW"))
 ##################################################################################################################
 
 
@@ -248,6 +252,7 @@ for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，�
 ## 画上下限
 plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
 plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
+plt.savefig(os.path.join(figDir, "CW-CCW"))
 ##################################################################################################################
 
 
@@ -259,6 +264,7 @@ plt.title('All_CWCCW_AV_DEV')
 plt.scatter(range(allCWCCWAvLen), All_CWCCW_AV_DEV)
 plt.plot(range(allCWCCWAvLen), np.ones(allCWCCWAvLen) * 0.003, 'r', label='CW-CCW limit')
 plt.legend(loc="best")
+plt.savefig(os.path.join(figDir, "All_CWCCW_AV_DEV"))
 plt.show()
 ##################################################################################################################
 
@@ -271,6 +277,7 @@ plt.title('All_CAP_MAX_DEV')
 plt.scatter(range(allCapMaxLen), All_CAP_MAX_DEV)
 plt.plot(range(allCapMaxLen), np.ones(allCapMaxLen) * 0.01, 'r', label='CW and CCW limit')
 plt.legend(loc="best")
+plt.savefig(os.path.join(figDir, "All_CAP_MAX_DEV"))
 plt.show()
 ##################################################################################################################
 
@@ -315,5 +322,6 @@ plt.title('Step_AVG & Step_STD_DEV')
 plt.scatter(range(allCWStepAvgLen), All_CW_STEP_AVG, label='CW AVG_DEV')
 plt.scatter(range(allCWStepAvgLen), All_CW_STEP_STD, label='CW STD_DEV')
 plt.legend(loc="best")
+plt.savefig(os.path.join(figDir, "Step_AVG & Step_STD_DEV"))
 plt.show()
 ##################################################################################################################

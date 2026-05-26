@@ -18,7 +18,7 @@ f_resonant: List[complex] = [0 for _ in range(len(C))]
 
 for i in range(len(C)):
   f_resonant[i] = 1 / sqrt(C[i] * L[i])
-  print(f"Resonant Frequency: {"{:.3e}".format(f_resonant[i])}")
+  # print(f"Resonant Frequency: {"{:.3e}".format(f_resonant[i])}")
 
 # 计算特定频率下阻抗
 f = 2e6
@@ -26,7 +26,7 @@ Z: List[complex] = [0 for _ in range(len(C))]
 
 for i in range(len(C)):
   Z[i] = 1j * (2 * pi * f * L[i] - 1 / (2 * pi * f * C[i]))
-  print(f"Z[i]: {"{:.3e}".format(Z[i])}")
+  # print(f"Z[i]: {"{:.3e}".format(Z[i])}")
 
 zc = 1 / (2 * pi * 2e6 * 13e-12)
 zl = 2 * pi * 2e6 * 2000e-9

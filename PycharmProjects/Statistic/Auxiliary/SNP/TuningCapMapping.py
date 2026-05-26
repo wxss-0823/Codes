@@ -60,7 +60,7 @@ for i in range(step01.size):
     if abs(Z02[j] - Z01[i]) < init_delta_z[i]:
       init_delta_z[i] = abs(Z02[j] - Z01[i])
       index_delta_z[0][i] = j
-      curvature =
+
 
     elif abs(j - index_delta_z[0][0]) >= 5:
       init_delta_z[i] = abs(Z02[0] - Z01[i])
@@ -72,24 +72,10 @@ for i in range(step01.size):
 print(index_delta_z)
 
 
-
-
-
-
-
-
-
-
 process_data['Step01'] = step01
 process_data['Z01'] = Z01
 process_data['Step02'] = step02
 process_data['Z02'] = Z02
 
 sio.savemat('process_data.mat', mdict={'process_data': process_data})
-
-
-
-
-
-
 

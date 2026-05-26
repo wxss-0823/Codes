@@ -13,9 +13,9 @@ import pandas as pd
 import skrf as rf
 import scipy.io as sio
 
-SN = '2506210102-2'
-snps_dir = rf'D:\Users\Wxss\01Project\01VVC\00Project\C-CapDecoupledTest260108\O-电容步进映射\{SN}'
-fig_dir = r'D:\Users\Wxss\01Project\01VVC\00Project\C-CapDecoupledTest260108\O-电容步进映射\fig'
+SN = '2506210102'
+snps_dir = rf'D:\Users\Wxss\01Project\01VVC\00Project\O-微步测试260205\步进扫描测试\{SN}'
+fig_dir = r'D:\Users\Wxss\01Project\01VVC\00Project\O-微步测试260205\步进扫描测试\fig'
 xlsxName = os.path.join(fig_dir, 'SNP DATA.xlsx')
 # snps_dir = r'D:\Users\Wxss\01Project\01VVC\00Data\C-CapDecoupledTest260108\阻抗步进\SNP\2506210102'
 snps = os.listdir(snps_dir)
@@ -79,6 +79,8 @@ pd_snp = pd.DataFrame(table)
 with pd.ExcelWriter(xlsxName, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
   pd_snp.to_excel(writer, sheet_name=SN, index=False)
 
+################################################################
+# Plot
 plt.figure(figsize=(8, 8), dpi=100, facecolor="w")
 plt.subplot(2, 2, 1)
 plt.plot(n, s11a)
@@ -87,12 +89,10 @@ plt.subplot(2, 2, 2)
 plt.plot(n, z.imag)
 plt.title('Z(imag)')
 
-# plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.subplot(2, 2, 3)
 plt.plot(n, c)
 plt.title('C(pF)')
 
-# plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
 plt.subplot(2, 2, 4)
 plt.scatter(n, deltaC)
 plt.grid(True, alpha=0.3, linestyle='--')
@@ -100,32 +100,42 @@ plt.title(r'deltaZ($\Omega$)')
 plt.savefig(os.path.join(fig_dir, f'{f_str}_SNP_{SN}.png'))
 plt.show()
 
-# plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-# plt.scatter(n, r)
-# plt.title(r'R(m$\Omega$)')
-# plt.show()
-
-plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-plt.plot(r[800:1200])
+plt.scatter(n, r)
 plt.title(r'R(m$\Omega$)')
 plt.show()
 
-step = np.array([i for i in range(N*2)])
-c_interpolation = np.zeros(shape=2*N, dtype=np.float64)
-z_imag_interpolation = np.zeros(shape=2*N, dtype=np.float64)
+plt.plot(r[800:1200])
+plt.title(r'R(m$\Omega$)')
+plt.show()
+################################################################
 
-for i in range(N-2):
-  c_interpolation[2*i] = c[i]
-  c_interpolation[2*i+1] = (c[i]+c[i+1])/2
-  z_imag_interpolation[2*i] = z.imag[i]
-  z_imag_interpolation[2*i+1] = (z.imag[i]+z.imag[i+1])/2
+################################################################
+# Interpolation 2
+# step = np.array([i for i in range(N*2)])
+# c_interpolation = np.zeros(shape=2*N, dtype=np.float64)
+# z_imag_interpolation = np.zeros(shape=2*N, dtype=np.float64)
 
+# for i in range(N-2):
+#   c_interpolation[2*i] = c[i]
+#   c_interpolation[2*i+1] = (c[i]+c[i+1])/2
+#   z_imag_interpolation[2*i] = z.imag[i]
+#   z_imag_interpolation[2*i+1] = (z.imag[i]+z.imag[i+1])/2
+
+# accu_c = {
+#   'Step': step,
+#   'C': c_interpolation,
+#   'Z': z_imag_interpolation
+# }
+################################################################
+
+step = np.array([i for i in range(N)])
 accu_c = {
   'Step': step,
-  'C': c_interpolation,
-  'Z': z_imag_interpolation
+  'C': c,
+  'Z': z.imag
 }
 
+sio.savemat("mini-step2.mat", accu_c)
 
 accu_c_pd = pd.DataFrame(accu_c)
 accu_c_dir = os.path.join(fig_dir, f"{f_str}_accC.xlsx")

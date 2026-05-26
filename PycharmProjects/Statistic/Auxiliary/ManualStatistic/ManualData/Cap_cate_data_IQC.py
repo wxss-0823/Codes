@@ -9,11 +9,14 @@ import re
 import shutil
 from typing import List
 
-cateDataDir = r"C:\Users\w00025121\Desktop\8-12分类"
+cateDataDir = r"D:\Users\Wxss\01Project\01VVC\03Data\自测数据\GL IQC\20260309\真空电容测试数据12.1-3.3-2"
 capList: List[str] = []
+typeList: List[str] = []
 
 # main
+# 用于 IQC 数据分类
 capPattern = r"\d+pF"
+typePtn = r"081900\d{2}-00[12]"
 for currentDir, subDirs, files in os.walk(cateDataDir):
   for subdir in subDirs:
     # print(subdir)
@@ -24,14 +27,35 @@ for currentDir, subDirs, files in os.walk(cateDataDir):
 
       if capValue not in capList:
         capList.append(capValue)
-        if not os.path.exists(capFileDir):
-          os.mkdir(capFileDir)
 
-      shutil.move(currFileDir, capFileDir)
-      print(f"From: {currentDir}\nTo: {capFileDir}")
+      if currentDir.rsplit('\\', 1)[-1] != capValue\
+          and currFileDir.rsplit('\\', 1)[-1] != capValue:
+        os.makedirs(capFileDir, exist_ok=True)
+        shutil.move(currFileDir, capFileDir)
+        print(f"From: {currentDir}\nTo: {capFileDir}\n")
+
     except AttributeError as e:
-      print(f"The dir \"{subdir}\" doesn't have capacity value.\n")
+      # print(f"Info: The dir \"{subdir}\" doesn't have capacity value.\n")
+
+      try:
+        typeValue = re.search(typePtn, subdir).group(0)
+        typeFileDir = os.path.join(currentDir, typeValue)
+        currFileDir = os.path.join(currentDir, subdir)
+
+        if typeValue not in typeList:
+          typeList.append(typeValue)
+
+        if currentDir.rsplit('\\', 1)[-1] != typeValue\
+            and currFileDir.rsplit('\\', 1)[-1] != typeValue:
+          os.makedirs(typeFileDir, exist_ok=True)
+          shutil.move(currFileDir, typeFileDir)
+          print(f"From: {currentDir}\nTo: {typeFileDir}\n")
+
+      except AttributeError as e:
+        print(f"Info: The dir \"{subdir}\" doesn't have type&cap value.\n")
+
       continue
 
   # Clear cap list
   capList.clear()
+  typeList.clear()

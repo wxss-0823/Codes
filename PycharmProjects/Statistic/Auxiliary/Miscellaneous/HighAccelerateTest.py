@@ -11,10 +11,12 @@ import pandas as pd
 # cap_list = [487.5, 352.5, 285, 217.5, 177, 163.5, 151.35]
 # cap_list = [81.25, 58.75, 47.5, 36.25, 29.5, 27.25, 25.225]
 per_list = [25, 15, 10, 5, 2, 1, 0.1]
-cap_list = [162.5, 117.5, 95, 72.5, 59, 54.5, 50.45]
+cap_list = [487.5, 352.5, 285, 217.5, 177, 163.5, 151.35]
 num_list = [1, 5, 10, 58, 15, 10, 1]
-end_value = 50
-threshold = 95
+# 复位容值：最小容值
+end_value = 150
+# 0.7 至 0.3 切换阈值
+threshold = 218
 big_interval = 0.7
 sml_interval = 0.3
 
@@ -63,10 +65,10 @@ test_dict = {
 }
 
 test_df = pd.DataFrame(test_dict)
-xlsx_name = r"D:\Users\Wxss\01Project\01VVC\00Project\O-VVC寿命测试\高加速度\高加速度测试用例.xlsx"
+xlsx_name = r"D:\Users\Wxss\01Project\01VVC\00Project\O-20260304VVC寿命测试\高加速度\高加速度测试用例.xlsx"
 
 with pd.ExcelWriter(xlsx_name, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
-  test_df.to_excel(writer, sheet_name="GL_0P6_500", index=False)
+  test_df.to_excel(writer, sheet_name="GZSG_0.2Nm_1500", index=False)
 
 
 

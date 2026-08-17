@@ -9,6 +9,10 @@
 import os
 
 import warnings
+from tabnanny import check
+
+from numpy.matlib import empty
+
 warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 
 import matplotlib.pyplot as plt
@@ -102,7 +106,7 @@ def capRead(
   plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
   plt.title('cap_dev CW&CCW')
   a = 0
-  k = 0
+  k = -1
   capAllLen = round(dfCapAll['A'].size)
   capLen = round(dfCap['A'].size)
   for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
@@ -113,7 +117,7 @@ def capRead(
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CW
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
       a = 0
-      k = 0
+      k = -1
     if i == capAllLen - 1:
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CW
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
@@ -134,7 +138,7 @@ def capRead(
   plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
   plt.title('CW-CCW')
   a = 0
-  k = 0
+  k = -1
   h = -1
   for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
     if dfCapAll.iloc[i, 0] > a:
@@ -152,7 +156,7 @@ def capRead(
       allCapMaxDev.append(max(CW_max, CCW_max))
 
       a = 0
-      k = 0
+      k = -1
       h = -1
     if i == capAllLen - 1:
       plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i])
@@ -171,11 +175,11 @@ def capRead(
 
   # 大于 100 pF 时，CW CCW 统计平均偏差
   plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-  plt.title('All_CWCCW_AV_DEV')
+  plt.title('All_CWCCW_AVG_DEV')
   plt.scatter(range(len(allCWCCWAveDev)), allCWCCWAveDev)
   plt.plot(range(len(allCWCCWAveDev)), np.ones(len(allCWCCWAveDev)) * 0.003, 'r', label='CW-CCW limit')
   plt.legend(loc='best')
-  plt.savefig(os.path.join(figureDir, "All_CWCCW_AV_DEV"))
+  plt.savefig(os.path.join(figureDir, "All_CWCCW_AVG_DEV"))
   # plt.show()
 
   # 大于 100 pF 时，CW 和 CCW 统计最大偏差
@@ -200,6 +204,68 @@ def capRead(
   print(f"The num of max capacity deviation exceeding 1.0%: {failedCapNum} in {len(allCapMaxDev) + 1} samples")
   print(f"The num of max capacity deviation exceeding 1.5%: {failedCapNum1} in {len(allCapMaxDev) + 1} samples")
 
+def checkDeltaCap(
+    cap_test_data: pd.DataFrame,
+    cap_up_lim: [],
+    cap_dw_lim: [],
+    figure_dir: str
+):
+  # 作为容值变化上限的整步数量
+  full_step_num = 2
+  # 容值变化上限
+  # cap_lim = (cap_test_data["A"].iloc[-1] - cap_test_data["A"].iloc[0]) / 2000 * full_step_num
+  cap_lim = []
+  for i in range(len(cap_test_data["A"])):
+    if cap_test_data["A"].iloc[i] <= 100:
+      cap_lim.append(cap_test_data["A"].iloc[i + 2] - cap_test_data["A"].iloc[i])
+      # cap_lim.append(0.005 * 100)
+    else:
+      cap_lim.append(0.005 * (cap_test_data["A"].iloc[i] - 100) + cap_test_data["A"].iloc[2] - cap_test_data["A"].iloc[0])
+  cw_jump_num = 0
+  ccw_jump_num = 0
+
+  jump_point = {"CW": [], "CCW": []}
+  for i in range(len(cap_test_data["A"]) - 1):
+    delta_cap = cap_test_data["A"].iloc[i + 1] - cap_test_data["A"].iloc[i]
+    cap_test_data.loc[i + 1, "delta_CW"] = cap_test_data["C"].iloc[i + 1] - cap_test_data["C"].iloc[i] + delta_cap
+    cap_test_data.loc[i + 1, "delta_CCW"] = cap_test_data["D"].iloc[i + 1] - cap_test_data["D"].iloc[i] + delta_cap
+
+  for i in range(len(cap_test_data["delta_CW"])):
+    if abs(cap_test_data["delta_CW"].iloc[i]) > cap_lim[i]:
+      jump_point["CW"].append(((i, cap_test_data["C"].iloc[i]), (i + 1, cap_test_data["C"].iloc[i + 1])))
+      cw_jump_num += 1
+    if abs(cap_test_data["delta_CCW"].iloc[i]) > cap_lim[i]:
+      jump_point["CCW"].append(((i, cap_test_data["D"].iloc[i]), (i + 1, cap_test_data["D"].iloc[i + 1])))
+      ccw_jump_num += 1
+
+  if jump_point["CW"] or jump_point["CCW"]:
+    plt.figure(figsize=(6, 6), dpi=300, facecolor="w")
+    plt.title(f'Jump Point Curve: {cap_test_data.iloc[0, 7]}')
+    plt.plot(cap_test_data['A'], cap_test_data["C"], linewidth=0.5, label=f"CW: {cw_jump_num} points")
+    plt.plot(cap_test_data['A'], cap_test_data["D"], linewidth=0.5, label=f"CCW: {ccw_jump_num} points")
+    cw_color = "#FF6B6B"
+    ccw_color = "#4ECDC4"
+    for i in range(len(jump_point["CW"])):
+      cw_jump_idx0 = jump_point["CW"][i][0][0] + 1
+      cw_jump_idx1 = jump_point["CW"][i][1][0] + 1
+      # plt.text(cap_test_data["A"][cw_jump_idx0], jump_point["CW"][i][0][1], f'P{i}-0', fontsize=8, color=cw_color)
+      plt.scatter(cap_test_data["A"][cw_jump_idx0], cap_test_data["C"][cw_jump_idx0], s=2, color="red")
+      # plt.text(cap_test_data["A"][cw_jump_idx1], jump_point["CW"][i][1][1], f'P{i}-1', fontsize=8, color=cw_color)
+      plt.scatter(cap_test_data["A"][cw_jump_idx1], cap_test_data["C"][cw_jump_idx1], s=2, color="red")
+    for i in range(len(jump_point["CCW"])):
+      cw_jump_idx0 = jump_point["CCW"][i][0][0] + 1
+      cw_jump_idx1 = jump_point["CCW"][i][1][0] + 1
+      # plt.text(cap_test_data["A"][cw_jump_idx0], jump_point["CCW"][i][0][1], f'P{i}-0', fontsize=8, color=ccw_color)
+      plt.scatter(cap_test_data["A"][cw_jump_idx0], cap_test_data["D"][cw_jump_idx0], s=2, color="red")
+      # plt.text(cap_test_data["A"][cw_jump_idx1], jump_point["CCW"][i][1][1], f'P{i}-1', fontsize=8, color=ccw_color)
+      plt.scatter(cap_test_data["A"][cw_jump_idx1], cap_test_data["D"][cw_jump_idx1], s=2, color="red")
+
+    plt.plot(cap_test_data['A'], cap_up_lim, 'b', linestyle='dashed')
+    plt.plot(cap_test_data['A'], cap_dw_lim, 'b', linestyle='dashed')
+    plt.legend(loc='best')
+    plt.savefig(os.path.join(figure_dir, f"JumpPointCurve_{cap_test_data.iloc[0, 7]}.png"))
+    plt.close()
+    # plt.show()
 
 def everyCapPlot(
     destDir: str,  # 原始数据地址，要求：子文件夹为分型号的电容数据
@@ -211,7 +277,7 @@ def everyCapPlot(
   SN: str = ''
 
   for rootDir, subDir, files in os.walk(destDir):
-    matchesSN = [r'_\d{7}', r'_GL\d{12}']
+    matchesSN = [r'0819\d{4}-\d{3}_\d{7}', r'0819\d{4}-\d{3}_GL\d{12}']
     for file in files:
       if file.endswith(".xlsx") and file[0] != '~':
         # 匹配电容型号信息
@@ -222,25 +288,36 @@ def everyCapPlot(
         except AttributeError:
           print('There is no SN matching result for pattern.')
 
-        print(file)
+        # print(file)
         fileName = os.path.join(rootDir, file)
         xls = pd.ExcelFile(fileName)
 
         # 容值精度采集
         sheetNames = xls.sheet_names
-        if 'Sheet1' in sheetNames:
-          selectedSheetName = 'Sheet1'
-        else:
-          raise ValueError("Date not found in the Excel file.")
+        sheetNameList = ['Sheet1', 'sheet1']
+        selectedSheetName = ""
+        for i, sheetName in enumerate(sheetNameList):
+          if sheetName in sheetNames:
+            selectedSheetName = sheetName
+          if i == len(sheetNameList):
+            raise ValueError("Sheet not found in the Excel file.")
 
         # Read: 全部行
         dfCap = pd.read_excel(fileName, sheet_name=selectedSheetName,
-                              usecols=[0, 1, 2, 3, 4, 5, 6])  # 取全部 7 列的数据
+                              usecols=[0, 1, 2, 3, 4, 5, 6])  # 取全部 7 列的数据\
+        dfCap = dfCap.drop(0)  # 删除首行
         dfCap.columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G']  # 统一列名称
+        dfCap = dfCap.astype(
+          {'A': float, 'B': float, 'C': float,
+           'D': float, 'E': float, 'F': float,
+           'G': float})
         dfCap['SN'] = SN  # 将 SN 数据写入表格
-        revRowLen = int(-len(dfCap['A']) / 2)
-        lastIndices = dfCap.index[revRowLen:]
-        dfCap = dfCap.drop(lastIndices)  # 删除最后反转的行
+
+        # Old version tool: Delete last reverse rows
+        # revRowLen = int(-len(dfCap['A']) / 2)
+        # lastIndices = dfCap.index[revRowLen:]
+        # dfCap = dfCap.drop(lastIndices)  # 删除最后反转的行
+
         dfCapAll = pd.concat([dfCapAll, dfCap])
 
   capId = dfCapAll[dfCapAll['A'] < 99].index
@@ -274,31 +351,36 @@ def everyCapPlot(
       if dfCapAll.iloc[i, 0] > 100:
         h = h + 1
     else:
-      plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-      plt.title('CW-CCW')
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i], label=f"SN{dfCapAll.iloc[i-k, 7]}")
-      plt.legend(loc='best')
+      # plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
+      # plt.title('CW-CCW')
+      # plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i], label=f"SN{dfCapAll.iloc[i-k, 7]}")
+      # plt.legend(loc='best')
+      #
+      # # 画上下限
+      # plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
+      # plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
+      # plt.savefig(os.path.join(figureDir, f"CW-CCW{dfCapAll.iloc[i-k, 7]}"))
 
-      # 画上下限
-      plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
-      plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
-      plt.savefig(os.path.join(figureDir, f"CW-CCW{dfCapAll.iloc[i-k, 7]}"))
-      plt.show()
+      # 检查容值步进变化量
+      if i == k:
+        checkDeltaCap(dfCapAll.iloc[(i - k):i], yLimitUpCap, yLimitDwCap, figureDir)
+      else:
+        checkDeltaCap(dfCapAll.iloc[(i - k - 1):i], yLimitUpCap, yLimitDwCap, figureDir)
 
       a = 0
       k = 0
       h = -1
-    if i == capAllLen - 1:
-      plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
-      plt.title('CW-CCW')
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i], label=f"SN{dfCapAll.iloc[i-k, 7]}")
-      plt.legend(loc='best')
-
-      # 画上下限
-      plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
-      plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
-      plt.savefig(os.path.join(figureDir, f"CW-CCW{dfCapAll.iloc[i-k, 7]}"))
-      plt.show()
+    # if i == capAllLen - 1:
+    #   # plt.figure(figsize=(6, 6), dpi=100, facecolor="w")
+    #   # plt.title('CW-CCW')
+    #   # plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['G'][(i - k):i], label=f"SN{dfCapAll.iloc[i-k, 7]}")
+    #   # plt.legend(loc='best')
+    #   #
+    #   # # 画上下限
+    #   # plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
+    #   # plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
+    #   # plt.savefig(os.path.join(figureDir, f"CW-CCW{dfCapAll.iloc[i-k, 7]}"))
+    #   checkDeltaCap(dfCapAll.iloc[(i - k):i], yLimitUpCap, yLimitDwCap)
 
 
 def stabilityXKLTest(

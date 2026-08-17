@@ -89,7 +89,8 @@ def result_plot(
 def getPowerOnOffData(
     batch_dir: str,
     figure_dir: str,
-    time_stamp: str
+    time_stamp: str,
+    ver_ptn: str
 ):
   sn = ""
   gap_list = []
@@ -103,12 +104,9 @@ def getPowerOnOffData(
   drop_cap_list = []
   drop_risk_sn = []
 
-  # Match Pattern
-  AV03_PTN = "AV03"
-
   for root, dirs, files in os.walk(batch_dir):
     for file in files:
-      if file.endswith(".xlsx") and file[0] != '~' and re.search(AV03_PTN, file):
+      if file.endswith(".xlsx") and file[0] != '~' and re.search(ver_ptn, file):
         sn_num += 1
         file_name = os.path.join(root, file)
         df = pd.read_excel(file_name, sheet_name="sheet2", nrows=10)
@@ -137,12 +135,15 @@ def getPowerOnOffData(
 
         gap_lim = float(sn_map[sn][1])
         cap_sn = ""
-        if sn[-1] == "1":
-          cap_sn = re.search(r"_(\d{7})_", file).group(1)
-        elif sn[-1] == "2":
-          cap_sn = re.search(r"_(GL\d+)_", file).group(1)
-        else:
-          print("SN Type Error.")
+        try:
+          if sn[-1] == "1":
+            cap_sn = re.search(r"_(\d{7})_", file).group(1)
+          elif sn[-1] == "2":
+            cap_sn = re.search(r"_(GL\d+)_", file).group(1)
+          else:
+            print("SN Type Error.")
+        except AttributeError as e:
+          print(f"File: {file} has no sn pattern.")
 
         if gap_list[-1] > gap_lim:
           risk_sn.append((sn, cap_sn, gap_list[-1], gap_lim))
@@ -151,7 +152,7 @@ def getPowerOnOffData(
           drop_risk_sn.append((sn, cap_sn, drop_gap_list[-1], gap_lim))
 
   output_dir = fr'D:\Users\WorkSpace\Pycharm\Auxiliary\ManualStatistic\Output\find_zero_error_{time_stamp}.csv'
-  result_plot(gap_list, cap_list, figure_dir, output_dir, sn=sn, sn_num=sn_num, risk_sn=risk_sn)
-  # result_plot(drop_gap_list, drop_cap_list, figure_dir, output_dir, sn=sn, sn_num=sn_num, risk_sn=drop_risk_sn)
+  # result_plot(gap_list, cap_list, figure_dir, output_dir, sn=sn, sn_num=sn_num, risk_sn=risk_sn)
+  result_plot(drop_gap_list, drop_cap_list, figure_dir, output_dir, sn=sn, sn_num=sn_num, risk_sn=drop_risk_sn)
 
 

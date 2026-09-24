@@ -15,13 +15,16 @@ import CapReadXKLFunc as Stat
 import TenTimesPowerOnOff as poo
 import CapReadDataGLChuchangPro as COA
 
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 def xkl_data_batch_read(
     dest_dir: str,
     figure_dir: str,
     handle_type: str,
     version_type: str
-):
+) -> bool:
   """
   批量读取并处理数据
   """
@@ -50,9 +53,10 @@ def xkl_data_batch_read(
   subDirs = next(os.walk(dest_dir))[1]
   subDirMP = r"\d{8}-\d{3}"
 
-  for subDir in subDirs:
-    if re.search(r"Failed", subDir):
-      subDirs.remove(subDir)
+
+  for i in range(len(subDirs) - 1, -1, -1):
+    if re.search(r"Failed", subDirs[i]):  # or re.search(r"-002", subDirs[i]): # 新增-260905: 全量处理IQC数据
+      subDirs.remove(subDirs[i])
 
   # Stat.stabilityXKLTest(dstDir, figDir)
 
@@ -72,10 +76,14 @@ def xkl_data_batch_read(
   for figure_dir in figDirs:
     os.makedirs(figure_dir, exist_ok=True)
 
+  # 新增-260905: 全量处理IQC数据
+  # cap_max_list = []
+
   for i in range(nLoop):
     print(f"Reading: {dstDirs[i]}\nWriting: {figDirs[i]}")
     match handle_type:
       case '':
+        # cap_max_list = [*cap_max_list, *Stat.capRead(dstDirs[i], figDirs[i])]  # 新增-260905: 全量处理IQC数据
         Stat.capRead(dstDirs[i], figDirs[i])
       case 'COA':
         COA.CoaCapRead(dstDirs[i], figDirs[i], output_dir)
@@ -90,15 +98,24 @@ def xkl_data_batch_read(
     if not len(os.listdir(figure_dir)):
       os.rmdir(figure_dir)
 
+  return True
+
 
 if __name__ == "__main__":
   iqc_root_dir = r"D:\Users\Wxss\01Project\01VVC\03Data\02IQC\0Variable\2026"
   coa_root_dir = r"D:\Users\Wxss\01Project\01VVC\03Data\01COA"
   fig_dir = r"D:\Users\Wxss\01Project\01VVC\03Data\04FigureArchive"
   batch_dirs = [r"\20260806"]
-  hdl_type: Literal["POO", "", "SingleCap", "COA"] = 'SingleCap'
+  hdl_type: Literal["POO", "", "SingleCap", "COA"] = ''
   ver_type: Literal["AVO2", "AV03", ""] = ''
 
-  for batch_dir in batch_dirs:
-    dst_dir = coa_root_dir + batch_dir if hdl_type == 'COA' else iqc_root_dir + batch_dir
-    xkl_data_batch_read(dst_dir, fig_dir, hdl_type, ver_type)
+  # 新增-260905: 全量数据处理，返回容值最大偏差
+  # cap_max_dev = []
+
+  Stat.capRead(r"D:\Users\Wxss\01Project\01VVC\03Data\02IQC\0Variable\2026\20260921\COMET",
+               r"D:\Users\Wxss\01Project\01VVC\03Data\04FigureArchive")
+
+  # for batch_dir in batch_dirs:
+  #   dst_dir = coa_root_dir + batch_dir if hdl_type == 'COA' else iqc_root_dir + batch_dir
+  #   # cap_max_dev = [*cap_max_dev, *xkl_data_batch_read(dst_dir, fig_dir, hdl_type, ver_type)]
+  #   xkl_data_batch_read(dst_dir, fig_dir, hdl_type, ver_type)

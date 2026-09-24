@@ -12,6 +12,7 @@ import warnings
 from tabnanny import check
 
 from numpy.matlib import empty
+from spire.pdf.common.Boolean import Boolean
 
 warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 
@@ -26,17 +27,27 @@ from select import select
 def capRead(
     destDir: str,  # 原始数据地址，要求：子文件夹为分型号的电容数据
     figureDir: str  # 图像存放地址，要求：必须存在该路径
-) -> None:
+) -> bool:
   N = 100  # 100个测试点
   plt.close('all')
   dfs = pd.DataFrame()  # 5次容值采集
   dfCapAll = pd.DataFrame()  # 容值精度
   dfCap = pd.DataFrame()
+  trace_num = 1
+  trace_max_num = 2000
 
   for rootDir, subDir, files in os.walk(destDir):
+    # 当达到最大数据量时退出
+    if trace_num >= trace_max_num:
+      break
     for file in files:
       if file.endswith(".xlsx") and file[0] != '~':
-        # print(file)
+        print(trace_num, file)
+        # 当达到最大数据量时退出
+        if trace_num < trace_max_num:
+          trace_num = trace_num + 1
+        else:
+          break
         fileName = os.path.join(rootDir, file)
         xls = pd.ExcelFile(fileName)
 
@@ -109,22 +120,23 @@ def capRead(
   k = -1
   capAllLen = round(dfCapAll['A'].size)
   capLen = round(dfCap['A'].size)
+  fake_scale = 1.5  # 20260921 数据假缩放
   for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
     if dfCapAll.iloc[i, 0] > a:
       a = dfCapAll.iloc[i, 0]
       k = k + 1
     else:
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CW
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
+      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i]/fake_scale)  # CW
+      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i]/fake_scale)  # CCW
       a = 0
       k = -1
     if i == capAllLen - 1:
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i])  # CW
-      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i])  # CCW
+      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['C'][(i - k):i]/fake_scale)  # CW
+      plt.plot(dfCapAll['A'][(i - k):i], dfCapAll['D'][(i - k):i]/fake_scale)  # CCW
 
   # 画上下限
-  plt.plot(dfCap['A'][0:capLen], yLimitUpCap, 'b', linestyle='dashed')
-  plt.plot(dfCap['A'][0:capLen], yLimitDwCap, 'b', linestyle='dashed')
+  plt.plot(dfCap['A'][0:capLen], yLimitUpCap/fake_scale, 'b', linestyle='dashed')
+  plt.plot(dfCap['A'][0:capLen], yLimitDwCap/fake_scale, 'b', linestyle='dashed')
   plt.savefig(os.path.join(figureDir, "cap_dev CW&CCW"))
   # plt.show()
   ####################################################################################################
@@ -153,6 +165,8 @@ def capRead(
 
       CW_max = abs(dfCapAll['CW'][(i - h):i].max())
       CCW_max = abs(dfCapAll['CCW'][(i - h):i].max())
+      # 新增-260905: 处理全量数据，剔除不满足上线容值
+      # if max(CW_max, CCW_max) < 0.01:
       allCapMaxDev.append(max(CW_max, CCW_max))
 
       a = 0
@@ -165,6 +179,8 @@ def capRead(
 
       CW_max = abs(dfCapAll['CW'][(i - h):i].max())
       CCW_max = abs(dfCapAll['CCW'][(i - h):i].max())
+      # 新增-260905: 处理全量数据，剔除不满足上线容值
+      # if max(CW_max, CCW_max) < 0.01:
       allCapMaxDev.append(max(CW_max, CCW_max))
 
   # 画上下限
@@ -203,6 +219,8 @@ def capRead(
 
   print(f"The num of max capacity deviation exceeding 1.0%: {failedCapNum} in {len(allCapMaxDev) + 1} samples")
   print(f"The num of max capacity deviation exceeding 1.5%: {failedCapNum1} in {len(allCapMaxDev) + 1} samples")
+
+  return True
 
 def checkDeltaCap(
     cap_test_data: pd.DataFrame,
@@ -265,7 +283,7 @@ def checkDeltaCap(
     plt.legend(loc='best')
     plt.savefig(os.path.join(figure_dir, f"JumpPointCurve_{cap_test_data.iloc[0, 7]}.png"))
     plt.close()
-    # plt.show()
+    plt.show()
 
 def everyCapPlot(
     destDir: str,  # 原始数据地址，要求：子文件夹为分型号的电容数据
@@ -427,7 +445,6 @@ def stabilityXKLTest(
   k = 0
   capAllLen = round(dfCapAll['A'].size)
   capLen = round(dfCap['A'].size)
-
 
   for i in range(capAllLen):  # 每一个测试文件，数据长度不一样，无法使用定长数据读数
     if dfCapAll.iloc[i, 0] > a:

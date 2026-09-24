@@ -26,7 +26,7 @@ if oDesign is None:
 oModule = oDesign.GetModule("ReportSetup")
 
 # Var
-report_name = "MP_20260817"
+report_name = "GoldRiver1_20260905"
 
 # 频点列表
 frequencies = [2e6, 13.56e6, 27e6, 40e6, 60e6, 80e6, 100e6, 120e6]
